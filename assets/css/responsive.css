@@ -84,7 +84,7 @@
 	}
 
 
-	/* === HOME PAGE TWO RESPONSIVE CSS === */
+	/* === HOME PAGE RESPONSIVE CSS === */
 	.slideshowcontent h1 {
 		font-size: 70px;
 	}
@@ -103,7 +103,6 @@
 	}
 
 
-	/* === HOME PAGE THREE RESPONSIVE CSS === */
 	#book-a-car {
 		padding-top: 0;
 	}
@@ -216,7 +215,7 @@
 		top: 50%;
 	}
 
-	/* === HOME PAGE TWO RESPONSIVE CSS === */
+
 	.slideshowcontent {
 		font-size: 16px;
 	}
@@ -374,7 +373,7 @@
 	}
 
 
-	/* === HOME PAGE TWO RESPONSIVE CSS === */
+	/* === HOME PAGE RESPONSIVE CSS === */
 	.slideshowcontent {
 		font-size: 13px;
 	}
@@ -396,7 +395,7 @@
 	}
 
 
-	/* === HOME PAGE THREE RESPONSIVE CSS === */
+
 	.single-we-do {
 		margin-bottom: 30px;
 	}
