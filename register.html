@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="zxx">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A&S Car Rental - Contact</title>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--=== Favicon ===-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>Cardoor - Car Rental HTML Template</title>
 
     <!--=== Bootstrap CSS ===-->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -29,6 +29,11 @@
     <!--=== Responsive CSS ===-->
     <link href="assets/css/responsive.css" rel="stylesheet">
 
+
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body class="loader-active">
@@ -51,14 +56,13 @@
                 <div class="row">
                     <!--== Single HeaderTop Start ==-->
                     <div class="col-lg-3 text-left">
-                        <a href="https://goo.gl/maps/fZpY2W7hW7EHpfKr5" target="_blank"><i
-                            class="fa fa-map-marker"></i> 1000 Great Hwy, San Francisco</a>
+                        <i class="fa fa-map-marker"></i> 802/2, Mirpur, Dhaka
                     </div>
                     <!--== Single HeaderTop End ==-->
 
                     <!--== Single HeaderTop Start ==-->
                     <div class="col-lg-3 text-center">
-                        <i class="fa fa-mobile"></i> +1 415 207 0227
+                        <i class="fa fa-mobile"></i> +1 800 345 678
                     </div>
                     <!--== Single HeaderTop End ==-->
 
@@ -78,7 +82,7 @@
                 <div class="row">
                     <!--== Logo Start ==-->
                     <div class="col-lg-4">
-                        <a href="HomePage.html" class="logo">
+                        <a href="index.html" class="logo">
                             <img src="assets/img/logo.png" alt="JSOFT">
                         </a>
                     </div>
@@ -88,7 +92,7 @@
                     <div class="col-lg-8 d-none d-xl-block">
                         <nav class="mainmenu alignright">
                             <ul>
-                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="HomePage.html">Home</a></li>
                                 <li><a href="about.html">About</a></li>
                                 <li><a href="services.html">services</a></li>
                                 <li><a href="#">Vehicles</a>
@@ -105,7 +109,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="login.html">Log In</a></li>
-                                <li><a href="register.html">Register</a></li>
+                                <li class="active"><a href="register.html">Register</a></li>
                                 </li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
@@ -119,8 +123,6 @@
     </header>
     <!--== Header Area End ==-->
 
-
-
     <!--== Page Title Area Start ==-->
     <section id="page-title-area" class="section-padding overlay">
         <div class="container">
@@ -128,9 +130,9 @@
                 <!-- Page Title Start -->
                 <div class="col-lg-12">
                     <div class="section-title  text-center">
-                        <h2>Contact Us</h2>
+                        <h2>Login</h2>
                         <span class="title-line"><i class="fa fa-car"></i></span>
-                        <p>We are happy to help you anytime!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
                 <!-- Page Title End -->
@@ -139,67 +141,59 @@
     </section>
     <!--== Page Title Area End ==-->
 
-
-    <!--== Contact Page Area Start ==-->
-    <div class="contact-page-wrao section-padding">
+    <!--== Login Page Content Start ==-->
+    <section id="lgoin-page-wrap" class="section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 m-auto">
-                    <div class="contact-form">
-                        <form action="index.html">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="name-input">
-                                        <input type="text" placeholder="Full Name">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="email-input">
-                                        <input type="email" placeholder="Email Address">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="website-input">
-                                        <input type="text" placeholder="Car number">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="subject-input">
-                                        <input type="text" placeholder="Subject">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="message-input">
-                                <textarea name="review" cols="30" rows="10" placeholder="Message"></textarea>
-                            </div>
-
-                            <div class="input-submit">
-                                <button type="submit">Submit Message</button>
-                            </div>
-                        </form>
-                    </div>
+                <div class="col-lg-5 col-md-8 m-auto">
+                	<div class="login-page-content">
+                		<div class="login-form">
+                			<h3>Sign Up</h3>
+							<form action="index.html">
+								<div class="name">
+									<div class="row">
+										<div class="col-md-6">
+											<input type="text" placeholder="First Name">
+										</div>
+										<div class="col-md-6">
+											<input type="text" placeholder="Last Name">
+										</div>
+									</div>
+								</div>
+								<div class="username">
+									<input type="email" placeholder="Email">
+								</div>
+								<div class="username">
+									<input type="text" placeholder="Username">
+								</div>
+								<div class="password">
+									<input type="password" placeholder="Password">
+								</div>
+								<div class="log-btn">
+									<button type="submit"><i class="fa fa-check-square"></i> Sign Up</button>
+								</div>
+							</form>
+                		</div>
+                		
+                		<div class="login-other">
+                			<span class="or">or</span>
+                			<a href="#" class="login-with-btn facebook"><i class="fa fa-facebook"></i> Signup With Facebook</a>
+                			<a href="#" class="login-with-btn google"><i class="fa fa-google"></i> Signup With Google</a>
+                		</div>
+                		<div class="create-ac">
+                			<p>Have an account? <a href="login.html">Sign In</a></p>
+                		</div>
+                		<div class="login-menu">
+                			<a href="about.html">About</a>
+                			<span>|</span>
+                			<a href="contact.html">Contact</a>
+                		</div>
+                	</div>
                 </div>
-            </div>
+        	</div>
         </div>
-    </div>
-    <!--== Contact Page Area End ==-->
-
-
-  <!--== Map Area Start ==-->
-
-    <section class="map-section">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25232.69837309509!2d-122.50910205332032!3d37.76455123238852!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808587b96c7ce36d%3A0x9a99fef329623c58!2s1000%20Great%20Hwy%2C%20San%20Francisco%2C%20CA%2094121%2C%20USA!5e0!3m2!1sen!2sro!4v1593429957944!5m2!1sen!2sro"></iframe>
     </section>
-
-    <!--== Map Area End ==-->
-
-
+    <!--== Login Page Content End ==-->
 
     <!--== Footer Area Start ==-->
     <section id="footer-area">
@@ -213,7 +207,7 @@
                             <h2>About Us</h2>
                             <div class="widget-body">
                                 <img src="assets/img/logo.png" alt="JSOFT">
-                                <p>A rental vehicle from A&S Car Rental is perfect for road trips, airport travel or to get around town on weekends.</p>
+                                <p>Lorem ipsum dolored is a sit ameted consectetur adipisicing elit. Nobis magni assumenda distinctio debitis, eum fuga fugiat error reiciendis.</p>
 
                                 <div class="newsletter-area">
                                     <form action="index.html">
@@ -235,27 +229,27 @@
                                 <ul class="recent-post">
                                     <li>
                                         <a href="#">
-                                            Hello San Francisco!
-                                            <i class="fa fa-long-arrow-right"></i>
-                                        </a>
+                                           Hello Bangladesh! 
+                                           <i class="fa fa-long-arrow-right"></i>
+                                       </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            Stuck in the desert, call us!
-                                            <i class="fa fa-long-arrow-right"></i>
-                                        </a>
+                                          Lorem ipsum dolor sit amet
+                                           <i class="fa fa-long-arrow-right"></i>
+                                       </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            Meet us at Arrivals in Airports ;)
-                                            <i class="fa fa-long-arrow-right"></i>
-                                        </a>
+                                           Hello Bangladesh! 
+                                           <i class="fa fa-long-arrow-right"></i>
+                                       </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            How to choose the right vehicle
-                                            <i class="fa fa-long-arrow-right"></i>
-                                        </a>
+                                            consectetur adipisicing elit?
+                                           <i class="fa fa-long-arrow-right"></i>
+                                       </a>
                                     </li>
                                 </ul>
                             </div>
@@ -266,17 +260,16 @@
                     <!-- Single Footer Widget Start -->
                     <div class="col-lg-4 col-md-6">
                         <div class="single-footer-widget">
-                            <h2>get in touch</h2>
+                            <h2>get touch</h2>
                             <div class="widget-body">
-                                <p> Our dedicated team is happy to see you in our offices. Be sure we will ensures your customers have the support that you need.</p>
+                                <p>Lorem ipsum doloer sited amet, consectetur adipisicing elit. nibh auguea, scelerisque sed</p>
 
                                 <ul class="get-touch">
-                                    <li><i class="fa fa-map-marker"></i> 1000 Great Hwy, San Francisco</li>
-                                    <li><i class="fa fa-mobile"></i> +1 415 207 0227</li>
-                                    <li><i class="fa fa-envelope"></i> a&scarrental@gmail.com</li>
+                                    <li><i class="fa fa-map-marker"></i> 800/8, Kazipara, Dhaka</li>
+                                    <li><i class="fa fa-mobile"></i> +880 01 86 25 72 43</li>
+                                    <li><i class="fa fa-envelope"></i> kazukamdu83@gmail.com</li>
                                 </ul>
-                                <a href="https://goo.gl/maps/fZpY2W7hW7EHpfKr5" class="map-show" target="_blank">Get
-                                    Directions</a>
+                                <a href="https://goo.gl/maps/b5mt45MCaPB2" class="map-show" target="_blank">Show Location</a>
                             </div>
                         </div>
                     </div>
@@ -291,13 +284,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <p>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved | A&S Car
-                            Rental
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div>
                 </div>
             </div>
@@ -342,6 +331,7 @@
 
     <!--=== Mian Js ===-->
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
