@@ -81,7 +81,9 @@
     z-index: 9999;
 }
 
-/*== Theme Defualt CSS ==*/
+
+
+/*== Defualt CSS ==*/
 
 /*== Header Top CSS Start ==*/
 
@@ -281,6 +283,11 @@ a.slicknav_btn {
 .slicknav_parent ul li.slicknav_parent:hover ul a {
 	background-color: transparent !important;
 }
+
+.align-right{
+	float:right;
+}
+
 
 /*== Header Bottom CSS End ==*/
 
