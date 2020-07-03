@@ -13,6 +13,5 @@ namespace ASRental.Models
         public string Content { get; set; }
         public string Picture { get; set; }
         public DateTime Date { get; set; }
-        public string Picture { get; set; }
     }
 }

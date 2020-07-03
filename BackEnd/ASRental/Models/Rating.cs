@@ -7,9 +7,9 @@ namespace ASRental.Models
 {
     public class Rating
     {
-        public int RatingId { get; set; }
+        public Guid RatingId { get; set; }
         public int Value { get; set; }
         public User User { get; set; }
-        public int UserId { get; set; }
+        public Guid UserId { get; set; }
     }
 }

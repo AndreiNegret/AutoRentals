@@ -20531,6 +20531,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\BookCars\\Create.cshtml",
+      "TargetPath": "Views\\BookCars\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -20541,8 +20546,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\BookCars\\Details.cshtml",
+      "TargetPath": "Views\\BookCars\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\BookCars\\Edit.cshtml",
+      "TargetPath": "Views\\BookCars\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20553,6 +20568,16 @@
     {
       "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\BookCars\\Delete.cshtml",
+      "TargetPath": "Views\\BookCars\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\BookCars\\Index.cshtml",
+      "TargetPath": "Views\\BookCars\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
