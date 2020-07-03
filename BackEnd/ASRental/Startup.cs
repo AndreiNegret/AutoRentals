@@ -12,6 +12,10 @@ using ASRental.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ASRental.Services.Interfaces;
+using ASRental.Services;
+using ASRental.Repository;
+using ASRental.Repository.Interfaces;
 
 namespace ASRental
 {
@@ -32,8 +36,41 @@ namespace ASRental
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddTransient<IBookCarService, BookCarService>();
+            services.AddTransient<IBookCarRepository, BookCarRepository>();
+
+            services.AddTransient<ICarService, CarService>();
+            services.AddTransient<ICarRepository, CarRepository>();
+
+            services.AddTransient<IContactService, ContactService>();
+            services.AddTransient<IContactRepository, ContactRepository>();
+
+            services.AddTransient<IDriverService, DriverService>();
+            services.AddTransient<IDriverRepository, DriverRepository>();
+
+            services.AddTransient<IFactService, FactService>();
+            services.AddTransient<IFactRepository, FactRepository>();
+
+            services.AddTransient<IOfferService, OfferService>();
+            services.AddTransient<IOfferRepository, OfferRepository>();
+
+            services.AddTransient<IRatingService, RatingService>();
+            services.AddTransient<IRatingRepository, RatingRepository>();
+
+            services.AddTransient<IServiceService, ServiceService>();
+            services.AddTransient<IServiceRepository, ServiceRepository>();
+
+            services.AddTransient<ITeamMemberService, TeamMemberService>();
+            services.AddTransient<ITeamMemberRepository, TeamMemberRepository>();
+
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IUserRepository, UserRepository>();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
