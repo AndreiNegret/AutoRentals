@@ -10,6 +10,5 @@ namespace ASRental.Models
         public Guid RatingId { get; set; }
         public int Value { get; set; }
         public User User { get; set; }
-        public Guid UserId { get; set; }
     }
 }

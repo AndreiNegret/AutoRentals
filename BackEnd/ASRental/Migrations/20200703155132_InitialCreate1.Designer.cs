@@ -4,14 +4,16 @@ using ASRental.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace ASRental.Data.Migrations
+namespace ASRental.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200703155132_InitialCreate1")]
+    partial class InitialCreate1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -57,6 +59,9 @@ namespace ASRental.Data.Migrations
                     b.Property<string>("CarName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("CarNumber")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("CarPicture")
                         .HasColumnType("nvarchar(max)");
 
@@ -66,16 +71,28 @@ namespace ASRental.Data.Migrations
                     b.Property<int>("FabricationYear")
                         .HasColumnType("int");
 
+                    b.Property<Guid?>("OfferId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("Price")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("RatingId")
+                    b.Property<Guid?>("RatingId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("TransmissionType")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<Guid?>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("CarId");
+
+                    b.HasIndex("OfferId");
+
+                    b.HasIndex("RatingId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Cars");
                 });
@@ -161,21 +178,6 @@ namespace ASRental.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Car1")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Car2")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Car3")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Car4")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Car5")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
@@ -185,22 +187,23 @@ namespace ASRental.Data.Migrations
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
+                    b.Property<Guid?>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("OfferId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Offers");
                 });
 
             modelBuilder.Entity("ASRental.Models.Rating", b =>
                 {
-                    b.Property<int>("RatingId")
+                    b.Property<Guid>("RatingId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<Guid?>("UserId1")
+                    b.Property<Guid?>("UserId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Value")
@@ -208,7 +211,7 @@ namespace ASRental.Data.Migrations
 
                     b.HasKey("RatingId");
 
-                    b.HasIndex("UserId1");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Ratings");
                 });
@@ -253,12 +256,6 @@ namespace ASRental.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("BookCarId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("CarId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
@@ -268,16 +265,18 @@ namespace ASRental.Data.Migrations
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("OfferId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("ServiceId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Username")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserId");
+
+                    b.HasIndex("ServiceId");
 
                     b.ToTable("User");
                 });
@@ -482,11 +481,40 @@ namespace ASRental.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("ASRental.Models.Car", b =>
+                {
+                    b.HasOne("ASRental.Models.Offer", null)
+                        .WithMany("Cars")
+                        .HasForeignKey("OfferId");
+
+                    b.HasOne("ASRental.Models.Rating", "Rating")
+                        .WithMany()
+                        .HasForeignKey("RatingId");
+
+                    b.HasOne("ASRental.Models.User", null)
+                        .WithMany("Cars")
+                        .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("ASRental.Models.Offer", b =>
+                {
+                    b.HasOne("ASRental.Models.User", null)
+                        .WithMany("Offers")
+                        .HasForeignKey("UserId");
+                });
+
             modelBuilder.Entity("ASRental.Models.Rating", b =>
                 {
                     b.HasOne("ASRental.Models.User", "User")
                         .WithMany()
-                        .HasForeignKey("UserId1");
+                        .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("ASRental.Models.User", b =>
+                {
+                    b.HasOne("ASRental.Models.Service", null)
+                        .WithMany("Users")
+                        .HasForeignKey("ServiceId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

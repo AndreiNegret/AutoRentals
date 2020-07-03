@@ -8,9 +8,8 @@ namespace ASRental.Models
     public class User
     {
         public Guid UserId { get; set; }
-        public Guid CarId { get; set; }
-        public Guid BookCarId { get; set; }
-        public Guid OfferId { get; set; }
+        public ICollection<Car> Cars { get; set; }
+        public ICollection<Offer> Offers { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }

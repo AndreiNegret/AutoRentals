@@ -9,5 +9,6 @@ namespace ASRental.Models
     {
         public Guid ServiceId { get; set; }
         public string ServiceType { get; set; }
+        public ICollection<User> Users { get; set; }
     }
 }

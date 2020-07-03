@@ -8,7 +8,8 @@ namespace ASRental.Models
     public class Car
     {
         public Guid CarId { get; set; }
-        public Guid RatingId { get; set; }
+        public string CarNumber { get; set; }
+        public Rating Rating { get; set; }
         public string CarName { get; set; }
         public string CarBody { get; set; }
         public string Price { get; set; }
