@@ -7,34 +7,34 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ASRental.Data;
 using ASRental.Models;
+using ASRental.Services.Interfaces;
 
 namespace ASRental.Controllers
 {
     public class BookCarsController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IBookCarService _bookCarService;
 
-        public BookCarsController(ApplicationDbContext context)
+        public BookCarsController(IBookCarService bookCarService)
         {
-            _context = context;
+            _bookCarService = bookCarService;
         }
 
-        // GET: BookCars
+        // GET: bookCars
         public async Task<IActionResult> Index()
         {
-            return View(await _context.BookCars.ToListAsync());
+            return View(await _bookCarService.GetAllBookCars());
         }
 
-        // GET: BookCars/Details/5
-        public async Task<IActionResult> Details(Guid? id)
+        // GET: bookCars/Details/5
+        public async Task<IActionResult> Details(Guid id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var bookCar = await _context.BookCars
-                .FirstOrDefaultAsync(m => m.BookCarId == id);
+            var bookCar = await _bookCarService.GetBookCarById(id);
             if (bookCar == null)
             {
                 return NotFound();
@@ -43,38 +43,36 @@ namespace ASRental.Controllers
             return View(bookCar);
         }
 
-        // GET: BookCars/Create
+        // GET: bookCars/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: BookCars/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: bookCars/Create
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("BookCarId,CarId,Location,PickDate,ReturnDate,CarName")] BookCar bookCar)
         {
             if (ModelState.IsValid)
             {
-                bookCar.BookCarId = Guid.NewGuid();
-                _context.Add(bookCar);
-                await _context.SaveChangesAsync();
+                await _bookCarService.CreateBookCar(bookCar);
                 return RedirectToAction(nameof(Index));
             }
             return View(bookCar);
         }
 
-        // GET: BookCars/Edit/5
-        public async Task<IActionResult> Edit(Guid? id)
+        // GET: bookCars/Edit/5
+        public async Task<IActionResult> Edit(Guid id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var bookCar = await _context.BookCars.FindAsync(id);
+            var bookCar = await _bookCarService.GetBookCarById(id);
             if (bookCar == null)
             {
                 return NotFound();
@@ -82,9 +80,9 @@ namespace ASRental.Controllers
             return View(bookCar);
         }
 
-        // POST: BookCars/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: bookCars/Edit/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("BookCarId,CarId,Location,PickDate,ReturnDate,CarName")] BookCar bookCar)
@@ -98,12 +96,11 @@ namespace ASRental.Controllers
             {
                 try
                 {
-                    _context.Update(bookCar);
-                    await _context.SaveChangesAsync();
+                    await _bookCarService.UpdateBookCar(id, bookCar);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!BookCarExists(bookCar.BookCarId))
+                    if (!_bookCarService.BookCarExists(bookCar.BookCarId))
                     {
                         return NotFound();
                     }
@@ -117,16 +114,15 @@ namespace ASRental.Controllers
             return View(bookCar);
         }
 
-        // GET: BookCars/Delete/5
-        public async Task<IActionResult> Delete(Guid? id)
+        // GET: bookCars/Delete/5
+        public async Task<IActionResult> Delete(Guid id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var bookCar = await _context.BookCars
-                .FirstOrDefaultAsync(m => m.BookCarId == id);
+            var bookCar = await _bookCarService.GetBookCarById(id);
             if (bookCar == null)
             {
                 return NotFound();
@@ -135,20 +131,13 @@ namespace ASRental.Controllers
             return View(bookCar);
         }
 
-        // POST: BookCars/Delete/5
+        // POST: bookCars/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            var bookCar = await _context.BookCars.FindAsync(id);
-            _context.BookCars.Remove(bookCar);
-            await _context.SaveChangesAsync();
+            await _bookCarService.DeleteBookCar(id);
             return RedirectToAction(nameof(Index));
-        }
-
-        private bool BookCarExists(Guid id)
-        {
-            return _context.BookCars.Any(e => e.BookCarId == id);
         }
     }
 }
