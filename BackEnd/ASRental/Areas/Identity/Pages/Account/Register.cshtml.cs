@@ -24,20 +24,19 @@ namespace ASRental.Areas.Identity.Pages.Account
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly Services.Interfaces.IAuthentificationService _authService;
         private readonly ILogger<RegisterModel> _logger;
-        private readonly IEmailSender _emailSender;
+        //private readonly IEmailSender _emailSender;
 
         public RegisterModel(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             ILogger<RegisterModel> logger,
-            Services.Interfaces.IAuthentificationService authService,
-            IEmailSender emailSender)
+            Services.Interfaces.IAuthentificationService authService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
             _authService = authService;
-            _emailSender = emailSender;
+            //_emailSender = emailSender;
         }
 
         [BindProperty]
