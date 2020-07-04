@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ASRental.Migrations
 {
-    public partial class InitialCreate1 : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -39,7 +39,10 @@ namespace ASRental.Migrations
                     TwoFactorEnabled = table.Column<bool>(nullable: false),
                     LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
                     LockoutEnabled = table.Column<bool>(nullable: false),
-                    AccessFailedCount = table.Column<int>(nullable: false)
+                    AccessFailedCount = table.Column<int>(nullable: false),
+                    ProfilePicture = table.Column<string>(nullable: true),
+                    FirstName = table.Column<string>(nullable: true),
+                    LastName = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -51,7 +54,6 @@ namespace ASRental.Migrations
                 columns: table => new
                 {
                     BookCarId = table.Column<Guid>(nullable: false),
-                    CarId = table.Column<Guid>(nullable: false),
                     Location = table.Column<string>(nullable: true),
                     PickDate = table.Column<DateTime>(nullable: false),
                     ReturnDate = table.Column<DateTime>(nullable: false),
@@ -107,6 +109,18 @@ namespace ASRental.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Facts", x => x.FactId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Ratings",
+                columns: table => new
+                {
+                    RatingId = table.Column<Guid>(nullable: false),
+                    Value = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Ratings", x => x.RatingId);
                 });
 
             migrationBuilder.CreateTable(
@@ -242,29 +256,6 @@ namespace ASRental.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "User",
-                columns: table => new
-                {
-                    UserId = table.Column<Guid>(nullable: false),
-                    FirstName = table.Column<string>(nullable: true),
-                    LastName = table.Column<string>(nullable: true),
-                    Email = table.Column<string>(nullable: true),
-                    Username = table.Column<string>(nullable: true),
-                    Password = table.Column<string>(nullable: true),
-                    ServiceId = table.Column<Guid>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_User", x => x.UserId);
-                    table.ForeignKey(
-                        name: "FK_User_Services_ServiceId",
-                        column: x => x.ServiceId,
-                        principalTable: "Services",
-                        principalColumn: "ServiceId",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Offers",
                 columns: table => new
                 {
@@ -272,35 +263,16 @@ namespace ASRental.Migrations
                     OfferType = table.Column<string>(nullable: true),
                     Price = table.Column<double>(nullable: false),
                     Description = table.Column<string>(nullable: true),
-                    UserId = table.Column<Guid>(nullable: true)
+                    ApplicationUserId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Offers", x => x.OfferId);
                     table.ForeignKey(
-                        name: "FK_Offers_User_UserId",
-                        column: x => x.UserId,
-                        principalTable: "User",
-                        principalColumn: "UserId",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Ratings",
-                columns: table => new
-                {
-                    RatingId = table.Column<Guid>(nullable: false),
-                    Value = table.Column<int>(nullable: false),
-                    UserId = table.Column<Guid>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Ratings", x => x.RatingId);
-                    table.ForeignKey(
-                        name: "FK_Ratings_User_UserId",
-                        column: x => x.UserId,
-                        principalTable: "User",
-                        principalColumn: "UserId",
+                        name: "FK_Offers_AspNetUsers_ApplicationUserId",
+                        column: x => x.ApplicationUserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
 
@@ -318,12 +290,18 @@ namespace ASRental.Migrations
                     FabricationYear = table.Column<int>(nullable: false),
                     TransmissionType = table.Column<string>(nullable: true),
                     ClimateControl = table.Column<string>(nullable: true),
-                    OfferId = table.Column<Guid>(nullable: true),
-                    UserId = table.Column<Guid>(nullable: true)
+                    ApplicationUserId = table.Column<string>(nullable: true),
+                    OfferId = table.Column<Guid>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Cars", x => x.CarId);
+                    table.ForeignKey(
+                        name: "FK_Cars_AspNetUsers_ApplicationUserId",
+                        column: x => x.ApplicationUserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Cars_Offers_OfferId",
                         column: x => x.OfferId,
@@ -335,12 +313,6 @@ namespace ASRental.Migrations
                         column: x => x.RatingId,
                         principalTable: "Ratings",
                         principalColumn: "RatingId",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Cars_User_UserId",
-                        column: x => x.UserId,
-                        principalTable: "User",
-                        principalColumn: "UserId",
                         onDelete: ReferentialAction.Restrict);
                 });
 
@@ -384,6 +356,11 @@ namespace ASRental.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Cars_ApplicationUserId",
+                table: "Cars",
+                column: "ApplicationUserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Cars_OfferId",
                 table: "Cars",
                 column: "OfferId");
@@ -394,24 +371,9 @@ namespace ASRental.Migrations
                 column: "RatingId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Cars_UserId",
-                table: "Cars",
-                column: "UserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Offers_UserId",
+                name: "IX_Offers_ApplicationUserId",
                 table: "Offers",
-                column: "UserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Ratings_UserId",
-                table: "Ratings",
-                column: "UserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_User_ServiceId",
-                table: "User",
-                column: "ServiceId");
+                column: "ApplicationUserId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -447,13 +409,13 @@ namespace ASRental.Migrations
                 name: "Facts");
 
             migrationBuilder.DropTable(
+                name: "Services");
+
+            migrationBuilder.DropTable(
                 name: "TeamMembers");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
-
-            migrationBuilder.DropTable(
-                name: "AspNetUsers");
 
             migrationBuilder.DropTable(
                 name: "Offers");
@@ -462,10 +424,7 @@ namespace ASRental.Migrations
                 name: "Ratings");
 
             migrationBuilder.DropTable(
-                name: "User");
-
-            migrationBuilder.DropTable(
-                name: "Services");
+                name: "AspNetUsers");
         }
     }
 }

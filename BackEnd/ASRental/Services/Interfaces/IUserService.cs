@@ -9,11 +9,11 @@ namespace ASRental.Services.Interfaces
     public interface IUserService
     {
         public Task<List<User>> GetAllUsers();
-        public Task<User> GetUserById(Guid id);
-        public Task<bool> UpdateUser(Guid id, User user);
+        public Task<User> GetUserById(string id);
+        public Task<bool> UpdateUser(string id, User user);
         public Task<bool> CreateUser(User user);
-        public Task<bool> DeleteUser(Guid id);
-        public bool UserExists(Guid id);
+        public Task<bool> DeleteUser(string id);
+        public bool UserExists(string id);
     }
  }
 

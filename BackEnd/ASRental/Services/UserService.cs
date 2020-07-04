@@ -31,7 +31,7 @@ namespace ASRental.Services
             }
         }
 
-        public async Task<bool> DeleteUser(Guid id)
+        public async Task<bool> DeleteUser(string id)
         {
             try
             {
@@ -63,11 +63,11 @@ namespace ASRental.Services
             throw new NotImplementedException();
         }
 
-        public Task<User> GetUserById(Guid id)
+        public Task<User> GetUserById(string id)
         {
             try
             {
-                return _userRepository.FindByCondition(user => user.UserId == id).FirstOrDefaultAsync();
+                return _userRepository.FindByCondition(user => user.Id == id).FirstOrDefaultAsync();
             }
             catch (Exception ex)
             {
@@ -75,7 +75,7 @@ namespace ASRental.Services
             }
         }
 
-        public async Task<bool> UpdateUser(Guid id, User user)
+        public async Task<bool> UpdateUser(string id, User user)
         {
             try
             {
@@ -90,9 +90,9 @@ namespace ASRental.Services
             }
         }
 
-        public bool UserExists(Guid id)
+        public bool UserExists(string id)
         {
-            return _userRepository.FindByCondition(e => e.UserId == id).Any();
+            return _userRepository.FindByCondition(e => e.Id == id).Any();
         }
     }
 }

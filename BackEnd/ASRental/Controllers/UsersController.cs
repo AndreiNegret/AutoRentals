@@ -33,7 +33,7 @@ namespace ASRental.Controllers
         }
 
         // GET: Users/Details/5
-        public async Task<IActionResult> Details(Guid id)
+        public async Task<IActionResult> Details(string id)
         {
             if (id == null)
             {
@@ -65,13 +65,13 @@ namespace ASRental.Controllers
             if (ModelState.IsValid)
             {
                 await _userService.CreateUser(user);
-                return RedirectToAction(nameof(Create));
+                return RedirectToAction(nameof(Index));
             }
             return View(user);
         }
 
         // GET: Users/Edit/5
-        public async Task<IActionResult> Edit(Guid id)
+        public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
             {
@@ -91,9 +91,9 @@ namespace ASRental.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("UserId,FirstName,LastName,Email,Username,Password")] User user)
+        public async Task<IActionResult> Edit(string id, [Bind("UserId,FirstName,LastName,Email,Username,Password")] User user)
         {
-            if (id != user.UserId)
+            if (id != user.Id)
             {
                 return NotFound();
             }
@@ -106,7 +106,7 @@ namespace ASRental.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!_userService.UserExists(user.UserId))
+                    if (!_userService.UserExists(user.Id))
                     {
                         return NotFound();
                     }
@@ -121,7 +121,7 @@ namespace ASRental.Controllers
         }
 
         // GET: Users/Delete/5
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
             {
@@ -140,7 +140,7 @@ namespace ASRental.Controllers
         // POST: Users/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(Guid id)
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
             await _userService.DeleteUser(id);
             return RedirectToAction(nameof(Index));
