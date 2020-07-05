@@ -1,35 +1,437 @@
 ﻿@model IEnumerable<ASRental.Models.Service>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Services";
 }
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ServiceType)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ServiceType)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ServiceId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ServiceId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ServiceId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<!--== Page Title Area Start ==-->
+<section id="page-title-area" class="section-padding overlay">
+    <div class="container">
+        <div class="row">
+            <!-- Page Title Start -->
+            <div class="col-lg-12">
+                <div class="section-title  text-center">
+                    <h2>Our Services</h2>
+                    <span class="title-line"><i class="fa fa-car"></i></span>
+                    <p>Our priority are happy customers!</p>
+                </div>
+            </div>
+            <!-- Page Title End -->
+        </div>
+    </div>
+</section>
+<!--== Page Title Area End ==-->
+<!--== Services Area Start ==-->
+<section id="service-area" class="section-padding">
+    <div class="container">
+
+        <!-- Service Content Start -->
+        <div class="row">
+            <!-- Single Service Start -->
+            <div class="col-lg-4 text-center ">
+                <div class="single-service ">
+                    <div class="media">
+                        <div class="service-item">
+                            <div class="service-icon ">
+                                <span></span>
+                                <i class="fa fa-taxi "></i>
+                            </div>
+                            <div class="media-body">
+
+                                <h3>RENTAL CAR</h3>
+                                <p>Any destination is in your mind, it's achievable with our vehicles!</p>
+                                
+                                <p>
+                                    <a class="rent-btn text-center mx-auto " asp-action="Create">Order Service</a>
+                                </p>
+                                <table class="table">
+                                    <thead >
+                                   
+                                    </thead>
+                                    <tbody class="mt-5 ml-5">
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.ServiceType)
+                                            </td>
+                                            <td>
+                                                <a asp-action="Edit" asp-route-id="@item.ServiceId">Edit</a> |
+                                                <a asp-action="Details" asp-route-id="@item.ServiceId">Details</a> |
+                                                <a asp-action="Delete" asp-route-id="@item.ServiceId">Delete</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Service End -->
+            <!-- Single Service Start -->
+            <div class="col-lg-4 text-center">
+                <div class="service-item">
+                    <i class="fa fa-cog"></i>
+                    <h3>CAR REPAIR</h3>
+                    <p>We provide free repair coverage for our car, so you just enjoy the ride.</p>
+                    
+                    <p>
+                        <a class="rent-btn text-center mx-auto " asp-action="Create">Order Service</a>
+                    </p>
+                    <table class="table">
+                        <thead >
+                                   
+                        </thead>
+                        <tbody class="mt-5 ml-5">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ServiceType)
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.ServiceId">Edit</a> |
+                                    <a asp-action="Details" asp-route-id="@item.ServiceId">Details</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.ServiceId">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <!-- Single Service End -->
+            <!-- Single Service Start -->
+            <div class="col-lg-4 text-center">
+                <div class="service-item">
+                    <i class="fa fa-map-marker"></i>
+                    <h3>TAXI SERVICE</h3>
+                    <p>One-way destination, no problem with us and our lovely drivers!</p>
+
+                    <p>
+                        <a class="rent-btn text-center mx-auto " asp-action="Create">Order Service</a>
+                    </p>
+                    <table class="table">
+                        <thead>
+
+                        </thead>
+                        <tbody class="mt-5 ml-5">
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ServiceType)
+                                    </td>
+                                    <td>
+                                        <a asp-action="Edit" asp-route-id="@item.ServiceId">Edit</a> |
+                                        <a asp-action="Details" asp-route-id="@item.ServiceId">Details</a> |
+                                        <a asp-action="Delete" asp-route-id="@item.ServiceId">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <!-- Single Service End -->
+            <!-- Single Service Start -->
+            <div class="col-lg-4 text-center">
+                <div class="service-item">
+                    <i class="fa fa-life-ring"></i>
+                    <h3>life insurance</h3>
+                    <p>Don't worry about anything, we think about all your possible problems. </p>
+
+                    <p>
+                        <a class="rent-btn text-center mx-auto " asp-action="Create">Order Service</a>
+                    </p>
+                    <table class="table">
+                        <thead >
+                                   
+                        </thead>
+                        <tbody class="mt-5 ml-5">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ServiceType)
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.ServiceId">Edit</a> |
+                                    <a asp-action="Details" asp-route-id="@item.ServiceId">Details</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.ServiceId">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Single Service End -->
+            <!-- Single Service Start -->
+            <div class="col-lg-4 text-center">
+                <div class="service-item">
+                    <i class="fa fa-bath"></i>
+                    <h3>car wash</h3>
+                    <p>Our cars are always in perfect shape and mood, being washed for free at anytime.</p>
+
+                    <p>
+                        <a class="rent-btn text-center mx-auto " asp-action="Create">Order Service</a>
+                    </p>
+                    <table class="table">
+                        <thead >
+                                   
+                        </thead>
+                        <tbody class="mt-5 ml-5">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ServiceType)
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.ServiceId">Edit</a> |
+                                    <a asp-action="Details" asp-route-id="@item.ServiceId">Details</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.ServiceId">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <!-- Single Service End -->
+            <!-- Single Service Start -->
+            <div class="col-lg-4 text-center">
+                <div class="service-item">
+                    <i class="fa fa-phone"></i>
+                    <h3>call driver</h3>
+                    <p>Just give us a call, the car will be waiting for you whenever you want!</p>
+
+                    <p>
+                        <a class="rent-btn text-center mx-auto " asp-action="Create">Order Service</a>
+                    </p>
+                    <table class="table">
+                        <thead >
+                                   
+                        </thead>
+                        <tbody class="mt-5 ml-5">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ServiceType)
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.ServiceId">Edit</a> |
+                                    <a asp-action="Details" asp-route-id="@item.ServiceId">Details</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.ServiceId">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <!-- Single Service End -->
+        </div>
+        <!-- Service Content End -->
+    </div>
+</section>
+<!--== Services Area End ==-->
+<!--== Fun Fact Area Start ==-->
+<section id="funfact-area" class="overlay section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-11 col-md-12 m-auto">
+                <div class="funfact-content-wrap">
+                    <div class="row">
+                        <!-- Single FunFact Start -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-funfact">
+                                <div class="funfact-icon">
+                                    <i class="fa fa-smile-o"></i>
+                                </div>
+                                <div class="funfact-content">
+                                    <p><span class="counter">550</span>+</p>
+                                    <h4>HAPPY CLIENTS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single FunFact End -->
+                        <!-- Single FunFact Start -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-funfact">
+                                <div class="funfact-icon">
+                                    <i class="fa fa-car"></i>
+                                </div>
+                                <div class="funfact-content">
+                                    <p><span class="counter">250</span>+</p>
+                                    <h4>CARS IN STOCK</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single FunFact End -->
+                        <!-- Single FunFact Start -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-funfact">
+                                <div class="funfact-icon">
+                                    <i class="fa fa-bank"></i>
+                                </div>
+                                <div class="funfact-content">
+                                    <p><span class="counter">50</span>+</p>
+                                    <h4>office in cities</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single FunFact End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--== Fun Fact Area End ==-->
+<!--== Testimonials Area Start ==-->
+<section id="testimonial-area" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <!-- Section Title Start -->
+            <div class="col-lg-12">
+                <div class="section-title  text-center">
+                    <h2>Testimonials</h2>
+                    <span class="title-line"><i class="fa fa-car"></i></span>
+                    <p>Check what people said about us!</p>
+                </div>
+            </div>
+            <!-- Section Title End -->
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 col-md-12 m-auto">
+                <div class="testimonial-content">
+                    <!--== Single Testimoial Start ==-->
+                    <div class="single-testimonial">
+                        <p>From start to finish my experience renting a car through A&S Car Rental was extraordinary. Over many years I have rented with probably every auto rental company in the US but nothing even comes close to the A&S Car Rental experience.</p>
+                        <h3>Dexter George</h3>
+                        <div class="client-logo">
+                            <img src="assets/img/client/Alin.jpg" alt="JSOFT">
+                        </div>
+                    </div>
+                    <!--== Single Testimoial End ==-->
+                    <!--== Single Testimoial Start ==-->
+                    <div class="single-testimonial">
+                        <p>We had such an amazing experience driving this beautiful Bentley for 24 hours. We were able to pick up my parents and drive them to a 50th wedding anniversary celebration. They were delighted to be driven around in this beautiful car.  </p>
+                        <h3>Arthur Hart</h3>
+                        <div class="client-logo">
+                            <img src="assets/img/client/Cosmin.jpg" alt="JSOFT">
+                        </div>
+                    </div>
+                    <!--== Single Testimoial End ==-->
+                    <!--== Single Testimoial Start ==-->
+                    <div class="single-testimonial">
+                        <p>Such a wonderful experience! The cars were all very fun, attractive looking cars! Great communication with hosts! Pick up and drop off was so easy! I highly recommend anyone looking for a fun car or just your basic economy car! </p>
+                        <h3>Zac Pearce</h3>
+                        <div class="client-logo">
+                            <img src="assets/img/client/Dani.jpg" alt="JSOFT">
+                        </div>
+                    </div>
+                    <!--== Single Testimoial End ==-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--== Testimonials Area End ==-->
+<!--== Pricing Area Start ==-->
+<section id="pricing-area" class="section-padding overlay">
+    <div class="container">
+        <div class="row">
+            <!-- Section Title Start -->
+            <div class="col-lg-12">
+                <div class="section-title  text-center">
+                    <h2>Only quality for clients</h2>
+                    <span class="title-line"><i class="fa fa-car"></i></span>
+                    <p>We consider budget of each person so you can choose what suits you best!</p>
+                </div>
+            </div>
+            <!-- Section Title End -->
+        </div>
+
+        <!-- Pricing Table Conatent Start -->
+        <div class="row">
+            <!-- Single Pricing Table -->
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="single-pricing-table">
+                    <h3>BUSINESS</h3>
+                    <h2>$ 55.99</h2>
+                    <h5>PER MONTH</h5>
+
+                    <ul class="package-list">
+                        <li>FREE VEHICLE DELIVERY</li>
+                        <li>WEDDINGS CELEBRATIONS</li>
+                        <li>FULL INSURANCE INCLUDED</li>
+                        <li>TRANSPORT ABROAD</li>
+                        <li>ALL INCLUSIVE MINI BAR</li>
+                        <li>CHAUFFER INCLUDED IN PRICE</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Single Pricing Table -->
+            <!-- Single Pricing Table -->
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="single-pricing-table">
+                    <h3>Trial</h3>
+                    <h2>Free</h2>
+                    <h5>PER MONTH</h5>
+
+                    <ul class="package-list">
+                        <li>FREE VEHICLE DELIVERY</li>
+                        <li>OTHER CELEBRATIONS</li>
+                        <li>FULL INSURANCE</li>
+                        <li>TRANSPORT ABROAD</li>
+                        <li>MINI BAR</li>
+                        <li>INCLUDED IN PRICE</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Single Pricing Table -->
+            <!-- Single Pricing Table -->
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="single-pricing-table">
+                    <h3>standard</h3>
+                    <h2>$ 35.99</h2>
+                    <h5>PER MONTH</h5>
+
+                    <ul class="package-list">
+                        <li>DELIVERY AT AIRPORT</li>
+                        <li>WEDDINGS AND OTHER</li>
+                        <li>FULL INCLUDED</li>
+                        <li>TRANSPORT ABROAD</li>
+                        <li>ALL MINI BAR</li>
+                        <li>CHAUFFER PRICE</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Single Pricing Table -->
+        </div>
+        <!-- Pricing Table Conatent End -->
+    </div>
+</section>
+<!--== Pricing Area End ==-->
+
+
+
+
+
+
+
+
+

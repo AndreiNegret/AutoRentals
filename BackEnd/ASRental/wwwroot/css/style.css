@@ -2310,6 +2310,7 @@ body,
 	padding: 8px 30px;
 	-webkit-transition: all 0.4s ease 0s;
 	transition: all 0.4s ease 0s;
+    text-decoration: none;
 
 }
 
@@ -3256,3 +3257,9 @@ body,
 }
 
 /* end star rating */
+
+/*Change Visited link's color*/
+
+a:visited {
+    color: white;
+}
