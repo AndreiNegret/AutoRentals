@@ -20756,6 +20756,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Home\\FAQ.cshtml",
+      "TargetPath": "Views\\Home\\FAQ.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -20863,6 +20868,11 @@
     {
       "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Home\\About.cshtml",
       "TargetPath": "Views\\Home\\About.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Home\\ErrorPage.cshtml",
+      "TargetPath": "Views\\Home\\ErrorPage.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -3263,3 +3263,12 @@ body,
 a:visited {
     color: white;
 }
+
+#logout{
+	color:white;
+	
+}
+
+#logout:hover {
+	color:#0195eb;
+}

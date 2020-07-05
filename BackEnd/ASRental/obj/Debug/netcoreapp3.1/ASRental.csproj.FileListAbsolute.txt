@@ -486,3 +486,5 @@ D:\Univer\PRACTICA\AutoRentals\BackEnd\ASRental\obj\Debug\netcoreapp3.1\staticwe
 D:\Univer\PRACTICA\AutoRentals\BackEnd\ASRental\obj\Debug\netcoreapp3.1\ASRental.dll
 D:\Univer\PRACTICA\AutoRentals\BackEnd\ASRental\obj\Debug\netcoreapp3.1\ASRental.pdb
 D:\Univer\PRACTICA\AutoRentals\BackEnd\ASRental\obj\Debug\netcoreapp3.1\ASRental.genruntimeconfig.cache
+D:\Facultate\Practica\AutoRentals\BackEnd\ASRental\obj\Debug\netcoreapp3.1\Razor\Views\Home\FAQ.cshtml.g.cs
+D:\Facultate\Practica\AutoRentals\BackEnd\ASRental\obj\Debug\netcoreapp3.1\Razor\Views\Home\ErrorPage.cshtml.g.cs
