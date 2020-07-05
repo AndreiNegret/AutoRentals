@@ -20751,6 +20751,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Cars\\Gallery.cshtml",
+      "TargetPath": "Views\\Cars\\Gallery.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Ratings\\Index.cshtml",
       "TargetPath": "Views\\Ratings\\Index.cshtml",
       "FileKind": "mvc"

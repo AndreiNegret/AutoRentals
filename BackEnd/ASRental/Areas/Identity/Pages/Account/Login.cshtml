@@ -5,6 +5,28 @@
     ViewData["Title"] = "Log in";
 }
 
+   
+
+
+
+<!--== Page Title Area Start ==-->
+<section id="page-title-area" class="section-padding overlay">
+    <div class="container">
+        <div class="row">
+            <!-- Page Title Start -->
+            <div class="col-lg-12">
+                <div class="section-title  text-center">
+                    <h2>Login</h2>
+                    <span class="title-line"><i class="fa fa-car"></i></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <!-- Page Title End -->
+        </div>
+    </div>
+</section>
+<!--== Page Title Area End ==-->
+
 <h1 class="my-3 text-center">@ViewData["Title"]</h1>
 <section>
     <div class="row d-flex justify-content-center col-12">
@@ -37,26 +59,58 @@
                 </div>
                 <div class="login-page-content">
                     <div class="login-other">
-                        <span class="or">or</span> 
+                        <span class="or">or</span>
                     </div>
                 </div>
-                
-                <div  class="login-other">
-                    <a href="#" class="login-with-btn facebook"><i class="fa fa-facebook"></i> Login With Facebook</a>
+
+
+
+                <div class="login-other">
+
+                    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=113869198637480&kid_directed_site=0&app_id=113869198637480&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv7.0%2Fdialog%2Foauth%3Fapp_id%3D113869198637480%26auth_type%26cbt%3D1593978378249%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df3b643d71b586ac%2526domain%253Ddevelopers.facebook.com%2526origin%253Dhttps%25253A%25252F%25252Fdevelopers.facebook.com%25252Ffe85960cd699%2526relation%253Dopener%26client_id%3D113869198637480%26display%3Dpopup%26domain%3Ddevelopers.facebook.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fdocs%252Ffacebook-login%252Fweb%252Flogin-button%252F%26id%3Df2d8df19e1f78bc%26locale%3Den_US%26logger_id%3Df3559b49e87da2c%26origin%3D1%26plugin_prepare%3Dtrue%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df2e330e6dce8e18%2526domain%253Ddevelopers.facebook.com%2526origin%253Dhttps%25253A%25252F%25252Fdevelopers.facebook.com%25252Ffe85960cd699%2526relation%253Dopener.parent%2526frame%253Df2d8df19e1f78bc%26ref%3DLoginButton%26response_type%3Dsigned_request%252Ctoken%252Cgraph_domain%26scope%26sdk%3Djoey%26size%3D%257B%2522width%2522%253A600%252C%2522height%2522%253A679%257D%26url%3Ddialog%252Foauth%26version%3Dv7.0%26ret%3Dlogin%26fbapp_pres%3D0&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2e330e6dce8e18%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ffe85960cd699%26relation%3Dopener.parent%26frame%3Df2d8df19e1f78bc%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=en_US&pl_dbl=0 " class="login-with-btn facebook" target="_blank"><i class="fa fa-facebook"></i> Login With Facebook</a>
                     <a href="#" class="login-with-btn google"><i class="fa fa-google"></i> Login With Google</a>
                 </div>
 
-                <div class="form-group">
-                    <div class="row col-12">
-                        <p class="col-12 mt-5 text-center">
-                            <a class="text text-sm blue  " id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
-                        </p>
-                        <p class="col-12 text-center">
-                            <a class="text text-sm blue " asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
-                        </p>
-                    </div>
-                    <div asp-validation-summary="All" class="text-danger"></div>
+
+                <html lang="en">
+                <head>
+                    <meta name="google-signin-scope" content="profile email">
+                    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+                    <script src="https://apis.google.com/js/platform.js" async defer></script>
+                </head>
+                <body>
+                    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+                    <script>
+                        function onSignIn(googleUser) {
+                            // Useful data for your client-side scripts:
+                            var profile = googleUser.getBasicProfile();
+                            console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+                            console.log('Full Name: ' + profile.getName());
+                            console.log('Given Name: ' + profile.getGivenName());
+                            console.log('Family Name: ' + profile.getFamilyName());
+                            console.log("Image URL: " + profile.getImageUrl());
+                            console.log("Email: " + profile.getEmail());
+
+                            // The ID token you need to pass to your backend:
+                            var id_token = googleUser.getAuthResponse().id_token;
+                            console.log("ID Token: " + id_token);
+                        }
+                    </script>
+                </body>
+            </html>
+
+
+            <div class="form-group">
+                <div class="row col-12">
+                    <p class="col-12 mt-5 text-center">
+                        <a class="text text-sm blue  " id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                    </p>
+                    <p class="col-12 text-center">
+                        <a class="text text-sm blue " asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                    </p>
                 </div>
+                <div asp-validation-summary="All" class="text-danger"></div>
+            </div>
             </form>
         </div>
     </div>
@@ -74,11 +128,11 @@
         border-color: #47b8fa;
     }
 
-    .login-btn:hover {
-        color:white;
-        background-color: black;
-        border-color: #0e6cff;
-    }
+        .login-btn:hover {
+            color: white;
+            background-color: black;
+            border-color: #0e6cff;
+        }
 
     .border-success {
         border-color: #808080 !important;
@@ -93,7 +147,6 @@
         width: 90%;
         text-align: center;
     }
-
 </style>
 
 @section Scripts {
