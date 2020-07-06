@@ -11,6 +11,7 @@ namespace ASRental.Models
         public string ProfilePicture { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public Guid OfferId { get; set; }
         public virtual ICollection<Car> Cars { get; set; }
         public ICollection<Offer> Offers { get; set; }
     }

@@ -3260,9 +3260,10 @@ body,
 
 /*Change Visited link's color*/
 
-a:visited {
-    color: white;
-}
+/*a:visited {
+	color: white;
+	text-decoration: none;
+}*/
 
 #logout{
 	color:white;
@@ -3271,4 +3272,14 @@ a:visited {
 
 #logout:hover {
 	color:#0195eb;
+}
+
+.simple_btn_hover {
+	color: white!important;
+	
+}
+
+.simple_btn_hover:hover {
+	background-color: #0195eb;
+	color: #fff!important;
 }

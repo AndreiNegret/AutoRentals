@@ -2311,6 +2311,14 @@ body,
 	color: #fff;
 }
 
+/* audi img for princing */
+.audi{
+	/* background-image: url(assets/img/pricing-bg.jpg); */
+	width: 354x;
+	height: 955px;
+	object-fit: cover;
+}
+
 /*== Page Pagination CSS ==*/
 
 .page-pagi {
