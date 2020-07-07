@@ -21,7 +21,7 @@ namespace ASRental.Controllers
         }
 
         // GET: Cars
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Gallery()
         {
             return View(await _carService.GetAllCars());
         }

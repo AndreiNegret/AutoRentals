@@ -17,7 +17,7 @@
 }
 
 .section-padding {
-	padding: 100px 0;
+	padding: 60px 0px;
 }
 
 .section-title {
@@ -968,7 +968,7 @@ a.slicknav_btn {
 /*== Pricing Area CSS Start ==*/
 
 #pricing-area {
-	background-image: url(../../assets/img/pricing-bg.jpg);
+	background-image: url(../assets/img/pricing-bg.jpg);
 	background-size: cover;
 	background-position: center center;
 }
@@ -2372,6 +2372,9 @@ body,
 	color: #575757;
 	font-size: 15px;
 	margin-bottom: 30px;
+	margin-left:0!important;
+	margin-right:0!important;
+	padding: 0!important;
 }
 
 .single-sidebar h3 {
@@ -2389,7 +2392,7 @@ body,
 
 .sidebar-body {
 	line-height: 2;
-	padding: 30px 15px;
+	padding: 0!important;
 }
 
 .sidebar-body i.fa {
@@ -3282,4 +3285,66 @@ body,
 .simple_btn_hover:hover {
 	background-color: #0195eb;
 	color: #fff!important;
+}
+
+/* audi img for princing */
+.audi {
+	/* background-image: url(assets/img/pricing-bg.jpg); */
+	width: 270px;
+	height: 900px;
+	object-fit: cover;
+}
+
+/*Offers style*/
+.platinum {
+	background-color: #e5e4e2;
+}
+
+.platinum_no_hover {
+	background-color: #e5e4e2;
+}
+
+.platinum:hover{
+	background-color:white;
+	
+}
+
+.white_text{
+	color:white;
+}
+
+.gold {
+	background-color: #FFDF00;
+}
+
+.gold_no_hover {
+	background-color: #FFDF00;
+}
+
+.gold:hover {
+	background-color: yellow;
+}
+
+.silver {
+	background-color: #C0C0C0;
+}
+
+.silver_no_hover {
+	background-color: #C0C0C0;
+}
+
+.silver:hover {
+	background-color: #D3D3D3;
+}
+
+.bronze {
+	background-color: #CD7F32;
+}
+
+.bronze_no_hover {
+	background-color: #CD7F32;
+}
+
+.bronze:hover {
+	background-color: #EACAAB;
 }

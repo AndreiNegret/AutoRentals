@@ -4,56 +4,75 @@
     ViewData["Title"] = "Register";
 }
 
-<h1 class = "my-3 text-center">@ViewData["Title"]</h1>
-<section>
-<div class="row d-flex justify-content-center col-12">
-    <div class="col-sm-10 col-md-6 col-lg-5 border border-success rounded m-24 mb-5">
-        <form id="account" method="post" class="py-5 pb-5">
-            <div class="d-flex justify-content-center">
-                <i class="fa fa-car" style="font-size:48px;color:#0195eb"></i>
-            </div>
-            <div class="d-flex justify-content-center">
-                <h1 class="h3 mb-3 font-weight-normal">Create a new account!</h1>
-            </div>
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Input.Email"></label>
-                <input asp-for="Input.Email" class="form-control" />
-                <span asp-validation-for="Input.Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Input.Password"></label>
-                <input asp-for="Input.Password" class="form-control" />
-                <span asp-validation-for="Input.Password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Input.ConfirmPassword"></label>
-                <input asp-for="Input.ConfirmPassword" class="form-control" />
-                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-            </div>
-            <div class="log-btn mt-5">
-                <button type="submit"><i class="fa fa-sign-in log-btn"></i> Register</button>
-            </div>
 
-            <div class="login-page-content">
-                <div class="login-other">
-                    <span class="or">or</span>
+<!--== Page Title Area Start ==-->
+<section id="page-title-area" class="section-padding overlay">
+    <div class="container">
+        <div class="row">
+            <!-- Page Title Start -->
+            <div class="col-lg-12">
+                <div class="section-title  text-center">
+                    <h2>Register page</h2>
+                    <span class="title-line"><i class="fa fa-car"></i></span>
+                    <p>Become a part of our community!</p>
                 </div>
             </div>
-
-            <div class="login-other">
-                <a href="#" class="login-with-btn facebook"><i class="fa fa-facebook"></i> Register With Facebook</a>
-                <a href="#" class="login-with-btn google"><i class="fa fa-google"></i> Register With Google</a>
-            </div>
-
-            <div class="center login-menu mt-3 mb-5">
-                <a href="about.html">About</a>
-                <span>|</span>
-                <a class="mb-5" href="contact.html">Contact</a>
-            </div>
-        </form>
+            <!-- Page Title End -->
+        </div>
     </div>
-</div>
+</section>
+<!--== Page Title Area End ==-->
+
+<h1 class="my-3 text-center">@ViewData["Title"]</h1>
+<section>
+    <div class="row d-flex justify-content-center col-12">
+        <div class="col-sm-10 col-md-6 col-lg-5 border border-success rounded m-24 mb-5">
+            <form id="account" method="post" class="py-5 pb-5">
+                <div class="d-flex justify-content-center">
+                    <i class="fa fa-car" style="font-size:48px;color:#0195eb"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <h1 class="h3 mb-3 font-weight-normal">Create a new account!</h1>
+                </div>
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Input.Email"></label>
+                    <input asp-for="Input.Email" class="form-control" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Input.Password"></label>
+                    <input asp-for="Input.Password" class="form-control" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Input.ConfirmPassword"></label>
+                    <input asp-for="Input.ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                </div>
+                <div class="log-btn mt-5">
+                    <button type="submit"><i class="fa fa-sign-in log-btn"></i> Register</button>
+                </div>
+
+                <div class="login-page-content">
+                    <div class="login-other">
+                        <span class="or">or</span>
+                    </div>
+                </div>
+
+                <div class="login-other">
+                    <a href="#" class="login-with-btn facebook"><i class="fa fa-facebook"></i> Register With Facebook</a>
+                    <a href="#" class="login-with-btn google"><i class="fa fa-google"></i> Register With Google</a>
+                </div>
+
+                <div class="center login-menu mt-3 mb-5">
+                    <a href="about.html">About</a>
+                    <span>|</span>
+                    <a class="mb-5" href="contact.html">Contact</a>
+                </div>
+            </form>
+        </div>
+    </div>
 </section>
 
 <style>
@@ -61,6 +80,7 @@
         position: absolute;
         left: 35%;
     }
+
     .form-control:focus {
         border-color: #808080 !important;
         box-shadow: 0 0 2px rgba(187, 28, 36, 1) !important;
