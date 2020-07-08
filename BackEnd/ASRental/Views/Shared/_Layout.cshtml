@@ -84,15 +84,14 @@
                 <div class="row">
                     <!--== Logo Start ==-->
                     <div class="col-lg-2">
-                        <a href="HomePage.html" class="logo">
-                            <img src="~/assets/img/logo.png" alt="JSOFT">
-                        </a>
+                        <h1><a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                                <img src="~/assets/img/logo.png" alt="JSOFT"></a></h1>
                     </div>
                     <!--== Logo End ==-->
                     <!--== Main Menu Start ==-->
-                    <div class="col-lg-8 d-none d-xl-block">
-                        <nav class="mainmenu aligncenter ">
-                            <ul>
+                    <div class="col-lg-8 d-none d-lg-block">
+                        <nav class="mainmenu d-flex justify-content-between">
+                            <ul class="d-flex">
                                 <li class="nav-item">
                                     <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                                 </li>
@@ -108,8 +107,8 @@
                                         <li class="nav-item">
                                             <a class="nav-link" asp-area="" asp-controller="Cars" asp-action="Gallery">Gallery</a>
                                             <a class="nav-link" asp-area="" asp-controller="Offers" asp-action="Create">Pricing</a>
-                                            <a class="nav-link" asp-area="" asp-controller="Drivers" asp-action="Index">Drivers</a>
-                                            <a class="nav-link" asp-area="" asp-action="Details">Car Details</a>
+                                            <a class="nav-link" asp-area="" asp-controller="Drivers" asp-action="Create">Drivers</a>
+                                            <a class="nav-link" asp-area="" asp-controller="Cars" asp-action="Details">Car Details</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -125,8 +124,10 @@
                                     <a class="nav-link" asp-area="" asp-controller="Contacts" asp-action="Create">Contact</a>
                                 </li>
                             </ul>
-                            <span class="vertical-divider"></span>
-                            <partial name="_LoginPartial" />
+                            <div class="d-flex">
+                                <span class="vertical-divider"></span>
+                                <partial name="_LoginPartial" />
+                            </div>
                         </nav>
                     </div>
                 </div>
@@ -294,7 +295,7 @@
     <!--=== Slicknav Min Js ===-->
     <script src="~/assets/js/plugins/slicknav.min.js"></script>
 
-    <!--=== Mian Js ===-->
+    <!--=== Main JS ===-->
     <script src="~/assets/js/main.js"></script>
 
 
@@ -377,6 +378,8 @@
         width: 1px;
         height: 80px;
         top: 10px;
+        left: 12px;
+        position: relative;
     }
 
     .center-text {

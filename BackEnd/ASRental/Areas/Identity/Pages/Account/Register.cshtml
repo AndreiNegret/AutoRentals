@@ -60,15 +60,25 @@
                     </div>
                 </div>
 
+
                 <div class="login-other">
-                    <a href="#" class="login-with-btn facebook"><i class="fa fa-facebook"></i> Register With Facebook</a>
-                    <a href="#" class="login-with-btn google"><i class="fa fa-google"></i> Register With Google</a>
+
+                    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=113869198637480&kid_directed_site=0&app_id=113869198637480&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv7.0%2Fdialog%2Foauth%3Fapp_id%3D113869198637480%26auth_type%26cbt%3D1593978378249%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df3b643d71b586ac%2526domain%253Ddevelopers.facebook.com%2526origin%253Dhttps%25253A%25252F%25252Fdevelopers.facebook.com%25252Ffe85960cd699%2526relation%253Dopener%26client_id%3D113869198637480%26display%3Dpopup%26domain%3Ddevelopers.facebook.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fdocs%252Ffacebook-login%252Fweb%252Flogin-button%252F%26id%3Df2d8df19e1f78bc%26locale%3Den_US%26logger_id%3Df3559b49e87da2c%26origin%3D1%26plugin_prepare%3Dtrue%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df2e330e6dce8e18%2526domain%253Ddevelopers.facebook.com%2526origin%253Dhttps%25253A%25252F%25252Fdevelopers.facebook.com%25252Ffe85960cd699%2526relation%253Dopener.parent%2526frame%253Df2d8df19e1f78bc%26ref%3DLoginButton%26response_type%3Dsigned_request%252Ctoken%252Cgraph_domain%26scope%26sdk%3Djoey%26size%3D%257B%2522width%2522%253A600%252C%2522height%2522%253A679%257D%26url%3Ddialog%252Foauth%26version%3Dv7.0%26ret%3Dlogin%26fbapp_pres%3D0&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2e330e6dce8e18%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ffe85960cd699%26relation%3Dopener.parent%26frame%3Df2d8df19e1f78bc%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=en_US&pl_dbl=0 " class="login-with-btn facebook" target="_blank"><i class="fa fa-facebook"></i> Login With Facebook</a>
+
+
+
+                </div>
+
+                <div data-onsuccess="onSignIn" data-theme="dark">
+                    <a href="https://accounts.google.com/signin/oauth/identifier?access_type=offline&client_id=801668726815.apps.googleusercontent.com&include_granted_scopes=true&prompt=consent%20select_account&redirect_uri=https%3A%2F%2Fwww.asrental.comFgoogle%2Fauthcallback&response_type=code&scope=email%20profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcontacts.readonly&state=AC3jT0a55nvnKrFxDo_JF3GBTGOB_4WiEkbxo-hKbtK3H5D2vpk0PyhT2-imsj4QBGVg6SrukC_2jbqK5uFOGV6u0fLoideNIBmcncDYdYdw4IbePZvN2iVVQSBqNx3X1_zBNo2PyrvPaA2TJ3deOOJLq-nBieVNFePP0RXOIjpGWRXkR_p0sc3bbAHhYbcv_nIjDjTNj6Vj__JVK-eDs_RMcSMPDAXk0TjYCjQRHFEppmg_kaDHXyTval8zsY_XIPoVtNCwdH1aRvZTlseD5KlxGjyGIB0c0HfJwxyiRrV4JYS7d01PPaXyIJJg4FaCSXe7UqjqzO1E_8KZhAUKY6UBoab7Zr7s2qyoNdnlOzq-zX5wj8FkXenDTz91YVYgs2o&o2v=1&as=XdwDx7wKwR-23WgWxM39ng&flowName=GeneralOAuthFlow" class="login-with-btn google  ">
+                        <i class="fa fa-google"></i> Login With Google
+                    </a>
                 </div>
 
                 <div class="center login-menu mt-3 mb-5">
-                    <a href="about.html">About</a>
+                    <a asp-area="" asp-controller="Home" asp-action="About">About</a>
                     <span>|</span>
-                    <a class="mb-5" href="contact.html">Contact</a>
+                    <a asp-area="" asp-controller="Contacts" asp-action="Create">Contact</a>
                 </div>
             </form>
         </div>

@@ -25,6 +25,33 @@
 </section>
 <!--== Page Title Area End ==-->
 
+<html lang="en">
+<head>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+    @*<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>*@
+    <script>
+        function onSignIn(googleUser) {
+            // Useful data for your client-side scripts:
+            var profile = googleUser.getBasicProfile();
+            console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+            console.log('Full Name: ' + profile.getName());
+            console.log('Given Name: ' + profile.getGivenName());
+            console.log('Family Name: ' + profile.getFamilyName());
+            console.log("Image URL: " + profile.getImageUrl());
+            console.log("Email: " + profile.getEmail());
+
+            // The ID token you need to pass to your backend:
+            var id_token = googleUser.getAuthResponse().id_token;
+            console.log("ID Token: " + id_token);
+        }
+    </script>
+</body>
+</html>
+
 <h1 class="my-3 text-center">@ViewData["Title"]</h1>
 <section>
     <div class="row d-flex justify-content-center col-12">
@@ -71,50 +98,20 @@
 
                 </div>
 
-
-                <html lang="en">
-                <head>
-                    <meta name="google-signin-scope" content="profile email">
-                    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
-                    <script src="https://apis.google.com/js/platform.js" async defer></script>
-                </head>
-                <body>
-                    @*<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>*@
-                    <div    data-onsuccess="onSignIn" data-theme="dark">
-                        <a href="https://accounts.google.com/signin/oauth/identifier?access_type=offline&client_id=801668726815.apps.googleusercontent.com&include_granted_scopes=true&prompt=consent%20select_account&redirect_uri=https%3A%2F%2Fwww.asrental.comFgoogle%2Fauthcallback&response_type=code&scope=email%20profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcontacts.readonly&state=AC3jT0a55nvnKrFxDo_JF3GBTGOB_4WiEkbxo-hKbtK3H5D2vpk0PyhT2-imsj4QBGVg6SrukC_2jbqK5uFOGV6u0fLoideNIBmcncDYdYdw4IbePZvN2iVVQSBqNx3X1_zBNo2PyrvPaA2TJ3deOOJLq-nBieVNFePP0RXOIjpGWRXkR_p0sc3bbAHhYbcv_nIjDjTNj6Vj__JVK-eDs_RMcSMPDAXk0TjYCjQRHFEppmg_kaDHXyTval8zsY_XIPoVtNCwdH1aRvZTlseD5KlxGjyGIB0c0HfJwxyiRrV4JYS7d01PPaXyIJJg4FaCSXe7UqjqzO1E_8KZhAUKY6UBoab7Zr7s2qyoNdnlOzq-zX5wj8FkXenDTz91YVYgs2o&o2v=1&as=XdwDx7wKwR-23WgWxM39ng&flowName=GeneralOAuthFlow" class="login-with-btn google  ">
-                        <i class="fa fa-google"></i> Login With Google</a>
-                    </div>
-                    <script>
-                        function onSignIn(googleUser) {
-                            // Useful data for your client-side scripts:
-                            var profile = googleUser.getBasicProfile();
-                            console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-                            console.log('Full Name: ' + profile.getName());
-                            console.log('Given Name: ' + profile.getGivenName());
-                            console.log('Family Name: ' + profile.getFamilyName());
-                            console.log("Image URL: " + profile.getImageUrl());
-                            console.log("Email: " + profile.getEmail());
-
-                            // The ID token you need to pass to your backend:
-                            var id_token = googleUser.getAuthResponse().id_token;
-                            console.log("ID Token: " + id_token);
-                        }
-                    </script>
-                </body>
-            </html>
-
-
-            <div class="form-group">
-                <div class="row col-12">
-                    <p class="col-12 mt-5 text-center">
-                        <a class="text text-sm blue  " id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
-                    </p>
-                    <p class="col-12 text-center">
-                        <a class="text text-sm blue " asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
-                    </p>
+                <div data-onsuccess="onSignIn" data-theme="dark">
+                    <a href="https://accounts.google.com/signin/oauth/identifier?access_type=offline&client_id=801668726815.apps.googleusercontent.com&include_granted_scopes=true&prompt=consent%20select_account&redirect_uri=https%3A%2F%2Fwww.asrental.comFgoogle%2Fauthcallback&response_type=code&scope=email%20profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcontacts.readonly&state=AC3jT0a55nvnKrFxDo_JF3GBTGOB_4WiEkbxo-hKbtK3H5D2vpk0PyhT2-imsj4QBGVg6SrukC_2jbqK5uFOGV6u0fLoideNIBmcncDYdYdw4IbePZvN2iVVQSBqNx3X1_zBNo2PyrvPaA2TJ3deOOJLq-nBieVNFePP0RXOIjpGWRXkR_p0sc3bbAHhYbcv_nIjDjTNj6Vj__JVK-eDs_RMcSMPDAXk0TjYCjQRHFEppmg_kaDHXyTval8zsY_XIPoVtNCwdH1aRvZTlseD5KlxGjyGIB0c0HfJwxyiRrV4JYS7d01PPaXyIJJg4FaCSXe7UqjqzO1E_8KZhAUKY6UBoab7Zr7s2qyoNdnlOzq-zX5wj8FkXenDTz91YVYgs2o&o2v=1&as=XdwDx7wKwR-23WgWxM39ng&flowName=GeneralOAuthFlow" class="login-with-btn google  ">
+                        <i class="fa fa-google"></i> Login With Google
+                    </a>
                 </div>
-                <div asp-validation-summary="All" class="text-danger"></div>
-            </div>
+
+                <div class="form-group">
+                    <div class="row col-12">
+                        <p class="col-12 mt-5 text-center">
+                            <a class="text text-sm blue " asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                        </p>
+                    </div>
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                </div>
             </form>
         </div>
     </div>

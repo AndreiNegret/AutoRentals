@@ -27,67 +27,72 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 m-auto">
-                <div class="contact-form">
-                    <form asp-action="Create">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6">
-                                <div class="name-input">
-                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                                    <div class="form-group">
-                                        <label asp-for="FullName" class="control-label"></label>
-                                        <input asp-for="FullName" class="form-control" />
-                                        <span asp-validation-for="FullName" class="text-danger"></span>
+                <div class="container py-md-4 mt-md-3 center-text my-3">
+                    <div class="wthree_head_section">
+                        <h2 class="w3l_header">Get in <span>Touch</span></h2>
+                    </div>
+                </div>
+                    <div class="contact-form">
+                        <form asp-action="Create">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="name-input">
+                                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                        <div class="form-group">
+                                            <label asp-for="FullName" class="control-label"></label>
+                                            <input asp-for="FullName" required="" class="form-control" />
+                                            <span asp-validation-for="FullName" class="text-danger"></span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="email-input">
-                                    <div class="form-group">
-                                        <label asp-for="Email" class="control-label"></label>
-                                        <input asp-for="Email" class="form-control" />
-                                        <span asp-validation-for="Email" class="text-danger"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6">
-                                <div class="website-input">
-                                    <div class="form-group">
-                                        <label asp-for="CarNumber" class="control-label"></label>
-                                        <input asp-for="CarNumber" class="form-control" />
-                                        <span asp-validation-for="CarNumber" class="text-danger"></span>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="email-input">
+                                        <div class="form-group">
+                                            <label asp-for="Email" class="control-label"></label>
+                                            <input asp-for="Email" required="" class="form-control" />
+                                            <span asp-validation-for="Email" class="text-danger"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 col-md-6">
-                                <div class="subject-input">
-                                    <div class="form-group">
-                                        <label asp-for="Subject" class="control-label"></label>
-                                        <input asp-for="Subject" class="form-control" />
-                                        <span asp-validation-for="Subject" class="text-danger"></span>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="website-input">
+                                        <div class="form-group">
+                                            <label asp-for="CarNumber" class="control-label"></label>
+                                            <input asp-for="CarNumber" required="" class="form-control" />
+                                            <span asp-validation-for="CarNumber" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="subject-input">
+                                        <div class="form-group">
+                                            <label asp-for="Subject" class="control-label"></label>
+                                            <input asp-for="Subject" required="" class="form-control" />
+                                            <span asp-validation-for="Subject" class="text-danger"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="message-input">
+                            <div class="message-input">
+                                <div class="form-group">
+                                    <label asp-for="Message" class="control-label"></label>
+                                    @*<textarea name="review" cols="30" rows="10"></textarea>*@
+                                    <input asp-for="Message" required="" class="form-control" />
+                                    <span asp-validation-for="Message" class="text-danger"></span>
+                                </div>
+                            </div>
                             <div class="form-group">
-                                <label asp-for="Message" class="control-label"></label>
-                                @*<textarea name="review" cols="30" rows="10"></textarea>*@
-                                <input asp-for="Message" class="form-control" />
-                                <span asp-validation-for="Message" class="text-danger"></span>
+                                <input type="submit" value="Submit" class="btn btn-primary" />
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" value="Create" class="btn btn-primary" />
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
     </div>
 </div>
 <!--== Contact Page Area End ==-->
@@ -118,7 +123,7 @@
 
 
 @* Confimation message send *@
-@section scripts{ 
+@*@section scripts{ 
     <script>
 $(document).ready(function(){
   $(".close").click(function(){
@@ -130,4 +135,4 @@ $(document).ready(function(){
 });
     </script>
 
-}
+}*@

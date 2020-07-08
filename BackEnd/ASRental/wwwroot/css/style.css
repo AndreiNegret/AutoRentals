@@ -3348,3 +3348,12 @@ body,
 .bronze:hover {
 	background-color: #EACAAB;
 }
+
+.w3l_header {
+	font-size: 2.2em;
+}
+
+.input-group-text {
+	background-color: transparent;
+	border: none;
+}
