@@ -8884,19 +8884,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sergi\\.nuget\\packages\\": {}
+    "C:\\Users\\Andrei Negret\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\ASRental.csproj",
+      "projectUniqueName": "D:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\ASRental.csproj",
       "projectName": "ASRental",
-      "projectPath": "D:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\ASRental.csproj",
-      "packagesPath": "C:\\Users\\sergi\\.nuget\\packages\\",
-      "outputPath": "D:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\obj\\",
+      "projectPath": "D:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\ASRental.csproj",
+      "packagesPath": "C:\\Users\\Andrei Negret\\.nuget\\packages\\",
+      "outputPath": "D:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\sergi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andrei Negret\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8967,7 +8971,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

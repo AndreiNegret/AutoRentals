@@ -22,6 +22,8 @@
     </div>
 </section>
 <!--== Page Title Area End ==-->
+
+
 <!--== Services Area Start ==-->
 <section id="service-area" class="section-padding">
     <div class="container">
@@ -54,7 +56,37 @@
                     <i class="fa fa-cog"></i>
                     <h3>CAR REPAIR</h3>
                     <p>We provide free repair coverage for our car, so you just enjoy the ride.</p>
-                    <a class="nav-link btn btn-primary mt-4 w-50 aligncenter d-flex" asp-area="" asp-controller="Services" asp-action="Index">Order Service</a>
+                    @*<a class="nav-link btn btn-primary mt-4 w-50 aligncenter d-flex" asp-area="" asp-controller="Services" asp-action="Index">Order Service</a>*@
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Launch demo modal
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Specify your details</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <form asp-action="Create">
+                                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                        <div class="form-group">
+                                            <label asp-for="ServiceType" class="control-label"></label>
+                                            <input asp-for="ServiceType" class="form-control" />
+                                            <span asp-validation-for="ServiceType" class="text-danger"></span>
+                                        </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <a class="nav-link btn btn-primary mt-4 w-50 aligncenter d-flex" type="submit" value="Order" asp-area="" asp-controller="Services" asp-action="Index">Order Service</a>
+                                </div>
+                                    </form>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Single Service End -->
@@ -94,7 +126,7 @@
                     <i class="fa fa-phone"></i>
                     <h3>call driver</h3>
                     <p>Just give us a call, the car will be waiting for you whenever you want!</p>
-                    <a class="nav-link btn btn-primary mt-4 w-50 aligncenter d-flex"   asp-area="" asp-controller="Services" asp-action="Index">Order Service</a>
+                    <a class="nav-link btn btn-primary mt-4 w-50 aligncenter d-flex" asp-area="" asp-controller="Services" asp-action="Index">Order Service</a>
                 </div>
             </div>
             <!-- Single Service End -->
@@ -292,3 +324,5 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+
