@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Linq;
@@ -46,9 +47,11 @@ namespace ASRental.Areas.Identity.Pages.Account.Manage
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
 
+            [DisplayName]
             [Display(Name = "First Name")]
             public string FirstName { get; set; }
 
+            [DisplayName]
             [Display(Name = "Last Name")]
             public string LastName { get; set; }
 
