@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\ASRental.csproj",
+  "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\ASRental.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20521,378 +20521,378 @@
   "RootNamespace": "ASRental",
   "Documents": [
     {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Ratings\\Create.cshtml",
-      "TargetPath": "Views\\Ratings\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Drivers\\Index.cshtml",
-      "TargetPath": "Views\\Drivers\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Drivers\\Create.cshtml",
-      "TargetPath": "Views\\Drivers\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Users\\Delete.cshtml",
-      "TargetPath": "Views\\Users\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\TeamMembers\\Index.cshtml",
-      "TargetPath": "Views\\TeamMembers\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Users\\Index.cshtml",
-      "TargetPath": "Views\\Users\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Cars\\Details.cshtml",
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Cars\\Details.cshtml",
       "TargetPath": "Views\\Cars\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Services\\Create.cshtml",
-      "TargetPath": "Views\\Services\\Create.cshtml",
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Contacts\\Delete.cshtml",
-      "TargetPath": "Views\\Contacts\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Offers\\Delete.cshtml",
-      "TargetPath": "Views\\Offers\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\TeamMembers\\Delete.cshtml",
-      "TargetPath": "Views\\TeamMembers\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Offers\\Index.cshtml",
-      "TargetPath": "Views\\Offers\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Ratings\\Delete.cshtml",
-      "TargetPath": "Views\\Ratings\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\BookCars\\Create.cshtml",
-      "TargetPath": "Views\\BookCars\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Users\\Create.cshtml",
-      "TargetPath": "Views\\Users\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Services\\Edit.cshtml",
-      "TargetPath": "Views\\Services\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Offers\\Create.cshtml",
-      "TargetPath": "Views\\Offers\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\TeamMembers\\Edit.cshtml",
-      "TargetPath": "Views\\TeamMembers\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Contacts\\Details.cshtml",
-      "TargetPath": "Views\\Contacts\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\TeamMembers\\Details.cshtml",
-      "TargetPath": "Views\\TeamMembers\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Cars\\Edit.cshtml",
-      "TargetPath": "Views\\Cars\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Drivers\\Delete.cshtml",
-      "TargetPath": "Views\\Drivers\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Facts\\Details.cshtml",
-      "TargetPath": "Views\\Facts\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Offers\\Details.cshtml",
-      "TargetPath": "Views\\Offers\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Drivers\\Edit.cshtml",
-      "TargetPath": "Views\\Drivers\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\BookCars\\Details.cshtml",
-      "TargetPath": "Views\\BookCars\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Cars\\Delete.cshtml",
-      "TargetPath": "Views\\Cars\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Services\\Details.cshtml",
-      "TargetPath": "Views\\Services\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Users\\Edit.cshtml",
-      "TargetPath": "Views\\Users\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Facts\\Create.cshtml",
-      "TargetPath": "Views\\Facts\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Offers\\Edit.cshtml",
-      "TargetPath": "Views\\Offers\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Facts\\Index.cshtml",
-      "TargetPath": "Views\\Facts\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Services\\Delete.cshtml",
-      "TargetPath": "Views\\Services\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Ratings\\Edit.cshtml",
-      "TargetPath": "Views\\Ratings\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Cars\\Gallery.cshtml",
-      "TargetPath": "Views\\Cars\\Gallery.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Ratings\\Index.cshtml",
-      "TargetPath": "Views\\Ratings\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Home\\FAQ.cshtml",
-      "TargetPath": "Views\\Home\\FAQ.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\BookCars\\Edit.cshtml",
-      "TargetPath": "Views\\BookCars\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Facts\\Delete.cshtml",
-      "TargetPath": "Views\\Facts\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Services\\Index.cshtml",
-      "TargetPath": "Views\\Services\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Users\\Details.cshtml",
-      "TargetPath": "Views\\Users\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Shared\\_LoginPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\BookCars\\Delete.cshtml",
-      "TargetPath": "Views\\BookCars\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Facts\\Edit.cshtml",
-      "TargetPath": "Views\\Facts\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\TeamMembers\\Create.cshtml",
-      "TargetPath": "Views\\TeamMembers\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\BookCars\\Index.cshtml",
-      "TargetPath": "Views\\BookCars\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Cars\\Create.cshtml",
-      "TargetPath": "Views\\Cars\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Contacts\\Index.cshtml",
-      "TargetPath": "Views\\Contacts\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Drivers\\Details.cshtml",
-      "TargetPath": "Views\\Drivers\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Ratings\\Details.cshtml",
-      "TargetPath": "Views\\Ratings\\Details.cshtml",
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Contacts\\Details.cshtml",
+      "TargetPath": "Views\\Contacts\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Contacts\\Create.cshtml",
-      "TargetPath": "Views\\Contacts\\Create.cshtml",
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Services\\Create.cshtml",
+      "TargetPath": "Views\\Services\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Home\\About.cshtml",
-      "TargetPath": "Views\\Home\\About.cshtml",
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Facts\\Create.cshtml",
+      "TargetPath": "Views\\Facts\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Home\\ErrorPage.cshtml",
-      "TargetPath": "Views\\Home\\ErrorPage.cshtml",
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Cars\\Create.cshtml",
+      "TargetPath": "Views\\Cars\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Cars\\Index.cshtml",
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Drivers\\Edit.cshtml",
+      "TargetPath": "Views\\Drivers\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Drivers\\Create.cshtml",
+      "TargetPath": "Views\\Drivers\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Ratings\\Create.cshtml",
+      "TargetPath": "Views\\Ratings\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\TeamMembers\\Details.cshtml",
+      "TargetPath": "Views\\TeamMembers\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Services\\Delete.cshtml",
+      "TargetPath": "Views\\Services\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\BookCars\\Edit.cshtml",
+      "TargetPath": "Views\\BookCars\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Users\\Edit.cshtml",
+      "TargetPath": "Views\\Users\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Contacts\\Delete.cshtml",
+      "TargetPath": "Views\\Contacts\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Services\\Details.cshtml",
+      "TargetPath": "Views\\Services\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Cars\\Index.cshtml",
       "TargetPath": "Views\\Cars\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Views\\Contacts\\Edit.cshtml",
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\TeamMembers\\Delete.cshtml",
+      "TargetPath": "Views\\TeamMembers\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Drivers\\Details.cshtml",
+      "TargetPath": "Views\\Drivers\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Facts\\Details.cshtml",
+      "TargetPath": "Views\\Facts\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\BookCars\\Details.cshtml",
+      "TargetPath": "Views\\BookCars\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\BookCars\\Index.cshtml",
+      "TargetPath": "Views\\BookCars\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Contacts\\Edit.cshtml",
       "TargetPath": "Views\\Contacts\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Facultate\\Practica\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Home\\About.cshtml",
+      "TargetPath": "Views\\Home\\About.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Home\\ErrorPage.cshtml",
+      "TargetPath": "Views\\Home\\ErrorPage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Users\\Create.cshtml",
+      "TargetPath": "Views\\Users\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Offers\\Details.cshtml",
+      "TargetPath": "Views\\Offers\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Cars\\Gallery.cshtml",
+      "TargetPath": "Views\\Cars\\Gallery.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\BookCars\\Create.cshtml",
+      "TargetPath": "Views\\BookCars\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Ratings\\Edit.cshtml",
+      "TargetPath": "Views\\Ratings\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Users\\Index.cshtml",
+      "TargetPath": "Views\\Users\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Drivers\\Index.cshtml",
+      "TargetPath": "Views\\Drivers\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Services\\Edit.cshtml",
+      "TargetPath": "Views\\Services\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Drivers\\Delete.cshtml",
+      "TargetPath": "Views\\Drivers\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Ratings\\Details.cshtml",
+      "TargetPath": "Views\\Ratings\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Offers\\Delete.cshtml",
+      "TargetPath": "Views\\Offers\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Offers\\Edit.cshtml",
+      "TargetPath": "Views\\Offers\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Offers\\Index.cshtml",
+      "TargetPath": "Views\\Offers\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Cars\\Edit.cshtml",
+      "TargetPath": "Views\\Cars\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Facts\\Edit.cshtml",
+      "TargetPath": "Views\\Facts\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Contacts\\Index.cshtml",
+      "TargetPath": "Views\\Contacts\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\TeamMembers\\Create.cshtml",
+      "TargetPath": "Views\\TeamMembers\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Home\\FAQ.cshtml",
+      "TargetPath": "Views\\Home\\FAQ.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Ratings\\Index.cshtml",
+      "TargetPath": "Views\\Ratings\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\TeamMembers\\Index.cshtml",
+      "TargetPath": "Views\\TeamMembers\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Contacts\\Create.cshtml",
+      "TargetPath": "Views\\Contacts\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Facts\\Index.cshtml",
+      "TargetPath": "Views\\Facts\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Offers\\Create.cshtml",
+      "TargetPath": "Views\\Offers\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\BookCars\\Delete.cshtml",
+      "TargetPath": "Views\\BookCars\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Cars\\Delete.cshtml",
+      "TargetPath": "Views\\Cars\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Users\\Delete.cshtml",
+      "TargetPath": "Views\\Users\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\TeamMembers\\Edit.cshtml",
+      "TargetPath": "Views\\TeamMembers\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Services\\Index.cshtml",
+      "TargetPath": "Views\\Services\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Ratings\\Delete.cshtml",
+      "TargetPath": "Views\\Ratings\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Users\\Details.cshtml",
+      "TargetPath": "Views\\Users\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Univer\\PRACTICA\\AutoRentals\\BackEnd\\ASRental\\Views\\Facts\\Delete.cshtml",
+      "TargetPath": "Views\\Facts\\Delete.cshtml",
       "FileKind": "mvc"
     }
   ],

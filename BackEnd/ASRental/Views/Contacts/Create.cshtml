@@ -5,134 +5,138 @@
 }
 
 
-<!--== Page Title Area Start ==-->
-<section id="page-title-area" class="section-padding overlay">
-    <div class="container">
-        <div class="row">
-            <!-- Page Title Start -->
-            <div class="col-lg-12">
-                <div class="section-title  text-center">
-                    <h2>Contact Us</h2>
-                    <span class="title-line"><i class="fa fa-car"></i></span>
-                    <p>We are happy to help you anytime!</p>
+        <!--== Page Title Area Start ==-->
+        <section  id="page-title-area" class="section-padding overlay">
+            <div class="container">
+                <div class="row">
+                    <!-- Page Title Start -->
+                    <div class="col-lg-12">
+                        <div class="section-title  text-center">
+                            <h2>Contact Us</h2>
+                            <span class="title-line"><i class="fa fa-car"></i></span>
+                            <p>We are happy to help you anytime!</p>
+                        </div>
+                    </div>
+                    <!-- Page Title End -->
                 </div>
             </div>
-            <!-- Page Title End -->
-        </div>
-    </div>
-</section>
-<!--== Page Title Area End ==-->
-<!--== Contact Page Area Start ==-->
-<div class="contact-page-wrao section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 m-auto">
-                <div class="container py-md-4 mt-md-3 center-text my-3">
-                    <div class="wthree_head_section">
-                        <h2 class="w3l_header">Get in <span>Touch</span></h2>
-                    </div>
-                </div>
-                    <div class="contact-form">
-                        <form asp-action="Create">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="name-input">
-                                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                                        <div class="form-group">
-                                            <label asp-for="FullName" class="control-label"></label>
-                                            <input asp-for="FullName" required="" class="form-control" />
-                                            <span asp-validation-for="FullName" class="text-danger"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="email-input">
-                                        <div class="form-group">
-                                            <label asp-for="Email" class="control-label"></label>
-                                            <input asp-for="Email" required="" class="form-control" />
-                                            <span asp-validation-for="Email" class="text-danger"></span>
-                                        </div>
-                                    </div>
-                                </div>
+        </section>
+        <!--== Page Title Area End ==-->
+        <!--== Contact Page Area Start ==-->
+        <div class="contact-page-wrao section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 m-auto">
+                        <div class="container py-md-4 mt-md-3 center-text my-3">
+                            <div class="wthree_head_section">
+                                <h2 class="w3l_header">Get in <span>Touch</span></h2>
                             </div>
-
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="website-input">
-                                        <div class="form-group">
-                                            <label asp-for="CarNumber" class="control-label"></label>
-                                            <input asp-for="CarNumber" required="" class="form-control" />
-                                            <span asp-validation-for="CarNumber" class="text-danger"></span>
+                        </div>
+                        <div class="contact-form">
+                            <form asp-action="Create">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="name-input">
+                                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                            <div class="form-group">
+                                                <label asp-for="FullName" class="control-label"></label>
+                                                <input asp-for="FullName" required="" class="form-control" />
+                                                <span asp-validation-for="FullName" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="email-input">
+                                            <div class="form-group">
+                                                <label asp-for="Email" class="control-label"></label>
+                                                <input asp-for="Email" required="" class="form-control" />
+                                                <span asp-validation-for="Email" class="text-danger"></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="subject-input">
-                                        <div class="form-group">
-                                            <label asp-for="Subject" class="control-label"></label>
-                                            <input asp-for="Subject" required="" class="form-control" />
-                                            <span asp-validation-for="Subject" class="text-danger"></span>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="website-input">
+                                            <div class="form-group">
+                                                <label asp-for="CarNumber" class="control-label"></label>
+                                                <input asp-for="CarNumber" required="" class="form-control" />
+                                                <span asp-validation-for="CarNumber" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="subject-input">
+                                            <div class="form-group">
+                                                <label asp-for="Subject" class="control-label"></label>
+                                                <input asp-for="Subject" required="" class="form-control" />
+                                                <span asp-validation-for="Subject" class="text-danger"></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="message-input">
+                                <div class="message-input">
+                                    <div class="form-group">
+                                        <label asp-for="Message"   class="control-label"></label>
+                                        <input asp-for="Message" required="" class="form-control txtbox" />
+                                        <span asp-validation-for="Message" class="text-danger"></span>
+                                    </div>
+                                </div>
                                 <div class="form-group">
-                                    <label asp-for="Message" class="control-label"></label>
-                                    @*<textarea name="review" cols="30" rows="10"></textarea>*@
-                                    <input asp-for="Message" required="" class="form-control" />
-                                    <span asp-validation-for="Message" class="text-danger"></span>
+                                    <input asp-area=""   asp-controller="Contacts" asp-action="Index" type="submit" value="Submit"        class="btn btn-primary" />
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" value="Submit" class="btn btn-primary" />
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-    </div>
-</div>
-<!--== Contact Page Area End ==-->
-@*<h1>Create</h1>
-
-    <h4>Contact</h4>
-    <hr />
-    <div class="row">
-        <div class="col-md-4">
         </div>
-    </div>*@
+        <!--== Contact Page Area End ==-->
+        @*<h1>Create</h1>
 
-@*<div>
-        <a asp-action="Index">Back to List</a>
-    </div>*@
+        <h4>Contact</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+        </div>*@
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+        @*<div>
+            <a asp-action="Index">Back to List</a>
+        </div>*@
 
-<!--== Map Area Start ==-->
+        @section Scripts {
+            <script>
+                function showAlert() {
+                    alert("Hello world!");
+                }
+            </script>
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }
 
-<section class="map-section">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25232.69837309509!2d-122.50910205332032!3d37.76455123238852!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808587b96c7ce36d%3A0x9a99fef329623c58!2s1000%20Great%20Hwy%2C%20San%20Francisco%2C%20CA%2094121%2C%20USA!5e0!3m2!1sen!2sro!4v1593429957944!5m2!1sen!2sro"></iframe>
-</section>
+        <!--== Map Area Start ==-->
 
-<!--== Map Area End ==-->
+        <section class="map-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25232.69837309509!2d-122.50910205332032!3d37.76455123238852!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808587b96c7ce36d%3A0x9a99fef329623c58!2s1000%20Great%20Hwy%2C%20San%20Francisco%2C%20CA%2094121%2C%20USA!5e0!3m2!1sen!2sro!4v1593429957944!5m2!1sen!2sro"></iframe>
+        </section>
 
 
-@* Confimation message send *@
-@*@section scripts{ 
-    <script>
-$(document).ready(function(){
-  $(".close").click(function(){
-    $("#myAlert").alert("close");
-  });
-  $("#myAlert").on('closed.bs.alert', function(){
-    alert('The alert message is now closed.');
-  });
-});
-    </script>
+        <!--== Map Area End ==-->
+        @* Confimation message send *@
+        @*@section scripts{
+            <script>
+        $(document).ready(function(){
+          $(".close").click(function(){
+            $("#myAlert").alert("close");
+          });
+          $("#myAlert").on('closed.bs.alert', function(){
+            alert('The alert message is now closed.');
+          });
+        });
+            </script>
 
-}*@
+        }*@
+

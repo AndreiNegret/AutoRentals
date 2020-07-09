@@ -3357,3 +3357,9 @@ body,
 	background-color: transparent;
 	border: none;
 }
+
+#txtbox {
+	font-size: 18pt;
+	height: 420px;
+	width: 200px;
+}

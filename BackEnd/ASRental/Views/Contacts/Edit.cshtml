@@ -5,7 +5,7 @@
 }
 
 <!--== Page Title Area Start ==-->
-<section id="page-title-area" class="section-padding overlay">
+<section id="page-title-area" class="section-padding overlay ">
     <div class="container">
         <div class="row">
             <!-- Page Title Start -->
@@ -25,6 +25,9 @@
 
 <h4 class="center-text my-3">Contact</h4>
 <hr />
+
+<section class="align-center m-5">
+
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
@@ -65,6 +68,7 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+</section>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

@@ -489,3 +489,6 @@ D:\Univer\PRACTICA\AutoRentals\BackEnd\ASRental\obj\Debug\netcoreapp3.1\ASRental
 D:\Facultate\Practica\AutoRentals\BackEnd\ASRental\obj\Debug\netcoreapp3.1\Razor\Views\Home\FAQ.cshtml.g.cs
 D:\Facultate\Practica\AutoRentals\BackEnd\ASRental\obj\Debug\netcoreapp3.1\Razor\Views\Home\ErrorPage.cshtml.g.cs
 D:\Facultate\Practica\AutoRentals\BackEnd\ASRental\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Gallery.cshtml.g.cs
+D:\Univer\PRACTICA\AutoRentals\BackEnd\ASRental\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Gallery.cshtml.g.cs
+D:\Univer\PRACTICA\AutoRentals\BackEnd\ASRental\obj\Debug\netcoreapp3.1\Razor\Views\Home\ErrorPage.cshtml.g.cs
+D:\Univer\PRACTICA\AutoRentals\BackEnd\ASRental\obj\Debug\netcoreapp3.1\Razor\Views\Home\FAQ.cshtml.g.cs
