@@ -37,9 +37,15 @@
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.TeamMemberId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.TeamMemberId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.TeamMemberId">Delete</a>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    if (User.IsInRole("Administrator"))
+                    {
+                        <a class=" btn btn-primary" asp-action="Edit" asp-route-id="@item.TeamMemberId">Edit</a>
+                        <a class="ml-3 btn btn-primary" asp-action="Details" asp-route-id="@item.TeamMemberId"> Details </a>
+                        <a class="ml-3 btn btn-primary" asp-action="Delete" asp-route-id="@item.TeamMemberId"> Delete </a>
+                    }
+                }
             </td>
         </tr>
 }

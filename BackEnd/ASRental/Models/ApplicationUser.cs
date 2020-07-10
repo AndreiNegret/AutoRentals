@@ -13,6 +13,6 @@ namespace ASRental.Models
         public string LastName { get; set; }
         public Guid OfferId { get; set; }
         public virtual ICollection<Car> Cars { get; set; }
-        public ICollection<Offer> Offers { get; set; }
+      
     }
 }

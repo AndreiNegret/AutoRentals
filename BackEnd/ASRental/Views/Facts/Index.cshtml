@@ -49,9 +49,15 @@
                 @Html.DisplayFor(modelItem => item.Date)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.FactId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.FactId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.FactId">Delete</a>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    if (User.IsInRole("Administrator"))
+                    {
+                        <a class=" btn btn-primary" asp-action="Edit" asp-route-id="@item.FactId">Edit</a>
+                        <a class="ml-3 btn btn-primary" asp-action="Details" asp-route-id="@item.FactId"> Details </a>
+                        <a class="ml-3 btn btn-primary" asp-action="Delete" asp-route-id="@item.FactId"> Delete </a>
+                    }
+                }
             </td>
         </tr>
 }

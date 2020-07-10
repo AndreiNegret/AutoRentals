@@ -8,18 +8,26 @@ using Microsoft.EntityFrameworkCore;
 using ASRental.Data;
 using ASRental.Models;
 using ASRental.Services.Interfaces;
+using System.Net.Http.Headers;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASRental.Controllers
 {
+   [Authorize(Roles = "Administrator, User")]
     public class CarsController : Controller
     {
         private readonly ICarService _carService;
+         private readonly IWebHostEnvironment _environment;
 
-        public CarsController(ICarService carService)
+        public CarsController(ICarService carService,IWebHostEnvironment environment)
         {
             _carService = carService;
+             _environment = environment;
         }
 
+        [Authorize]
         // GET: Cars
         public async Task<IActionResult> Gallery()
         {
@@ -27,27 +35,34 @@ namespace ASRental.Controllers
         }
 
         // GET: Cars/Details/5
-        public async Task<IActionResult> Details(Guid id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+        //public async Task<IActionResult> Details(Guid id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            var car = await _carService.GetCarById(id);
-            if (car == null)
-            {
-                return NotFound();
-            }
+        //    var car = await _carService.GetCarById(id);
+        //    if (car == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return View(car);
-        }
+        //    return View(car);
+        //}
 
         // GET: Cars/Create
         public IActionResult Create()
         {
             return View();
         }
+
+        public IActionResult Details()
+        {
+            
+            return View();
+        }
+
 
         // POST: Cars/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
@@ -58,8 +73,35 @@ namespace ASRental.Controllers
         {
             if (ModelState.IsValid)
             {
+                //for update profile img start
+            var newFileName = string.Empty;
+            if (HttpContext.Request.Form.Files != null)
+            {
+                var fileName = string.Empty;
+                string pathDb = string.Empty;
+                var files = HttpContext.Request.Form.Files;
+                foreach (var file in files)
+                {
+                    if (file.Length > 0)
+                    {
+                        fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+                        var myUniqueFileName = Convert.ToString(Guid.NewGuid());
+                        var fileExtension = Path.GetExtension(fileName);
+                        newFileName = myUniqueFileName + fileExtension;
+                        fileName = Path.Combine(_environment.WebRootPath, "images") + $@"\{newFileName}";
+                        pathDb = "/images/" + newFileName;
+                        using (FileStream fs = System.IO.File.Create(fileName))
+                        {
+                            await file.CopyToAsync(fs);
+                            fs.Flush();
+                            car.CarPicture = pathDb;
+                        }
+                    }
+                }
+            }
+
                 await _carService.CreateCar(car);
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Gallery));
             }
             return View(car);
         }

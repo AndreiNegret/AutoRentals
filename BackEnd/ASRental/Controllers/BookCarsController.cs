@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using ASRental.Data;
 using ASRental.Models;
 using ASRental.Services.Interfaces;
+using ASRental.Dto;
 
 namespace ASRental.Controllers
 {
@@ -54,14 +55,18 @@ namespace ASRental.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BookCarId,CarId,Location,PickDate,ReturnDate,CarName")] BookCar bookCar)
+        public async Task<IActionResult> Create(BookCarDto bookCar)
         {
-            if (ModelState.IsValid)
+            try
             {
-                await _bookCarService.CreateBookCar(bookCar);
-                return RedirectToAction(nameof(Index));
+                var newBookCar = new BookCar(bookCar);
+                await _bookCarService.CreateBookCar(newBookCar);
+                return Ok(bookCar);
             }
-            return View(bookCar);
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
         }
 
         // GET: bookCars/Edit/5

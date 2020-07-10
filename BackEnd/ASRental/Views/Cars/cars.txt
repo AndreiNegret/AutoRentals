@@ -1,0 +1,1470 @@
+﻿ <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all suv">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/escalade.jpg">
+                                                <img src="~/assets/img/vehicles/escalade.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.cadillac.com/suvs/escalade">Cadillac Escalade</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $300/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star10" name="rate" value="5" />
+                                                <label for="star10" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star9" name="rate" value="4" />
+                                                <label for="star9" title="Great!">4 stars</label>
+                                                <input type="radio" id="star8" name="rate" value="3" />
+                                                <label for="star8" title="Decent">3 stars</label>
+                                                <input type="radio" id="star7" name="rate" value="2" />
+                                                <label for="star7" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star6" name="rate" value="1" />
+                                                <label for="star6" title="Bad...">1 star</label>
+                                            </div>
+
+
+                                            <h5>SUV</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2018</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate 4 zones</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all limo">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/merclimo.jpg">
+                                                <img src="~/assets/img/vehicles/merclimo.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.mercedes-benz.com/en/">Golden Mercedes </a>
+                                                <span class="price"><i class="fa fa-tag"></i> $1500/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star15" name="rate" value="5" />
+                                                <label for="star15" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star14" name="rate" value="4" />
+                                                <label for="star14" title="Great!">4 stars</label>
+                                                <input type="radio" id="star13" name="rate" value="3" />
+                                                <label for="star13" title="Decent">3 stars</label>
+                                                <input type="radio" id="star12" name="rate" value="2" />
+                                                <label for="star12" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star11" name="rate" value="1" />
+                                                <label for="star11" title="Bad...">1 star</label>
+                                            </div>
+
+                                            <h5>LIMOUSINE</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2010</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all cabrio">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/bentley.jpg">
+                                                <img src="~/assets/img/vehicles/bentley.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.bentleymotors.com/en.html">Bentley Continental</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $500/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star20" name="rate" value="5" />
+                                                <label for="star20" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star19" name="rate" value="4" />
+                                                <label for="star19" title="Great!">4 stars</label>
+                                                <input type="radio" id="star18" name="rate" value="3" />
+                                                <label for="star18" title="Decent">3 stars</label>
+                                                <input type="radio" id="star17" name="rate" value="2" />
+                                                <label for="star17" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star16" name="rate" value="1" />
+                                                <label for="star16" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>CABRIO</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2018</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all sedan">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/benz.jpg">
+                                                <img src="~/assets/img/vehicles/benz.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.mercedes-benz.com/en/">Mercedes Benz E Class</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $90/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star25" name="rate" value="5" />
+                                                <label for="star25" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star24" name="rate" value="4" />
+                                                <label for="star24" title="Great!">4 stars</label>
+                                                <input type="radio" id="star23" name="rate" value="3" />
+                                                <label for="star23" title="Decent">3 stars</label>
+                                                <input type="radio" id="star22" name="rate" value="2" />
+                                                <label for="star22" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star21" name="rate" value="1" />
+                                                <label for="star21" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>SEDAN</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2015</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate 4 zones</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all vintage">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/cadivintage.jpg">
+                                                <img src="~/assets/img/vehicles/cadivintage.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.cadillac.com/">Cadillac</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $200/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star30" name="rate" value="5" />
+                                                <label for="star30" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star29" name="rate" value="4" />
+                                                <label for="star29" title="Great!">4 stars</label>
+                                                <input type="radio" id="star28" name="rate" value="3" />
+                                                <label for="star28" title="Decent">3 stars</label>
+                                                <input type="radio" id="star27" name="rate" value="2" />
+                                                <label for="star27" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star26" name="rate" value="1" />
+                                                <label for="star26" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>VINTAGE</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">1956</a>
+                                                <a href="#">Manual</a>
+                                                <a href="#">Air condition</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all suv">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/bmwx6.jpg">
+                                                <img src="~/assets/img/vehicles/bmwx6.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.bmw.com/en/index.html">BMW X6</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $210/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star35" name="rate" value="5" />
+                                                <label for="star35" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star34" name="rate" value="4" />
+                                                <label for="star34" title="Great!">4 stars</label>
+                                                <input type="radio" id="star33" name="rate" value="3" />
+                                                <label for="star33" title="Decent">3 stars</label>
+                                                <input type="radio" id="star32" name="rate" value="2" />
+                                                <label for="star32" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star31" name="rate" value="1" />
+                                                <label for="star31" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>SUV</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2017</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate 4 zones</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all van">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/vwvan.jpg">
+                                                <img src="~/assets/img/vehicles/vwvan.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.vw.com/">Volkswagen Touran</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $35/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star40" name="rate" value="5" />
+                                                <label for="star40" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star39" name="rate" value="4" />
+                                                <label for="star39" title="Great!">4 stars</label>
+                                                <input type="radio" id="star38" name="rate" value="3" />
+                                                <label for="star38" title="Decent">3 stars</label>
+                                                <input type="radio" id="star37" name="rate" value="2" />
+                                                <label for="star37" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star36" name="rate" value="1" />
+                                                <label for="star36" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>VAN</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2010</a>
+                                                <a href="#">manual</a>
+                                                <a href="#">air condition</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all cabrio">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/porschecabrio.jpg">
+                                                <img src="~/assets/img/vehicles/porschecabrio.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.porsche.com/usa/models/911/">Porsche 911</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $130/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star45" name="rate" value="5" />
+                                                <label for="star45" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star44" name="rate" value="4" />
+                                                <label for="star44" title="Great!">4 stars</label>
+                                                <input type="radio" id="star43" name="rate" value="3" />
+                                                <label for="star43" title="Decent">3 stars</label>
+                                                <input type="radio" id="star42" name="rate" value="2" />
+                                                <label for="star42" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star41" name="rate" value="1" />
+                                                <label for="star41" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>CABRIO</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2015</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all vintage">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/impalavintange.jpg">
+                                                <img src="~/assets/img/vehicles/impalavintange.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.chevrolet.com/cars/impala">Chevrolet Impala</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $160/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star50" name="rate" value="5" />
+                                                <label for="star50" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star49" name="rate" value="4" />
+                                                <label for="star49" title="Great!">4 stars</label>
+                                                <input type="radio" id="star48" name="rate" value="3" />
+                                                <label for="star48" title="Decent">3 stars</label>
+                                                <input type="radio" id="star47" name="rate" value="2" />
+                                                <label for="star47" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star46" name="rate" value="1" />
+                                                <label for="star46" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>VINTAGE</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">1958</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Air condition</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all van">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/chevyvan.jpg">
+                                                <img src="~/assets/img/vehicles/chevyvan.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.chevrolet.com/">Chevrolet City Express</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $50/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star55" name="rate" value="5" />
+                                                <label for="star55" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star54" name="rate" value="4" />
+                                                <label for="star54" title="Great!">4 stars</label>
+                                                <input type="radio" id="star53" name="rate" value="3" />
+                                                <label for="star53" title="Decent">3 stars</label>
+                                                <input type="radio" id="star52" name="rate" value="2" />
+                                                <label for="star52" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star51" name="rate" value="1" />
+                                                <label for="star51" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>VAN</h5>
+
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2015</a>
+                                                <a href="#">manual</a>
+                                                <a href="#">air condition</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all limo">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/cadilimo.jpg">
+                                                <img src="~/assets/img/vehicles/cadilimo.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.cadillac.com/">Cadillac Escalade </a>
+                                                <span class="price"><i class="fa fa-tag"></i> $1100/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star60" name="rate" value="5" />
+                                                <label for="star60" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star59" name="rate" value="4" />
+                                                <label for="star59" title="Great!">4 stars</label>
+                                                <input type="radio" id="star58" name="rate" value="3" />
+                                                <label for="star58" title="Decent">3 stars</label>
+                                                <input type="radio" id="star57" name="rate" value="2" />
+                                                <label for="star57" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star56" name="rate" value="1" />
+                                                <label for="star56" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>LIMOUSINE</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2007</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all vintage">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/mercedesvintage.jpg">
+                                                <img src="~/assets/img/vehicles/mercedesvintage.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.mercedes-benz.com/en/">Mercedes Benz 300 SI</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $90/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star65" name="rate" value="5" />
+                                                <label for="star65" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star64" name="rate" value="4" />
+                                                <label for="star64" title="Great!">4 stars</label>
+                                                <input type="radio" id="star63" name="rate" value="3" />
+                                                <label for="star63" title="Decent">3 stars</label>
+                                                <input type="radio" id="star62" name="rate" value="2" />
+                                                <label for="star62" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star61" name="rate" value="1" />
+                                                <label for="star61" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>VINTAGE</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">1937</a>
+                                                <a href="#">manual</a>
+                                                <a href="#">air condition</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all sedan">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/bmw.jpg">
+                                                <img src="~/assets/img/vehicles/bmw.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.bmw.com/en/index.html">BMW 530d</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $100/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star70" name="rate" value="5" />
+                                                <label for="star70" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star69" name="rate" value="4" />
+                                                <label for="star69" title="Great!">4 stars</label>
+                                                <input type="radio" id="star68" name="rate" value="3" />
+                                                <label for="star68" title="Decent">3 stars</label>
+                                                <input type="radio" id="star67" name="rate" value="2" />
+                                                <label for="star67" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star66" name="rate" value="1" />
+                                                <label for="star66" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>SEDAN</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2015</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all suv">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/audiq7.jpg">
+                                                <img src="~/assets/img/vehicles/audiq7.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.audi.com/en.html">Audi Q7</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $140/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star75" name="rate" value="5" />
+                                                <label for="star75" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star74" name="rate" value="4" />
+                                                <label for="star74" title="Great!">4 stars</label>
+                                                <input type="radio" id="star73" name="rate" value="3" />
+                                                <label for="star73" title="Decent">3 stars</label>
+                                                <input type="radio" id="star72" name="rate" value="2" />
+                                                <label for="star72" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star71" name="rate" value="1" />
+                                                <label for="star71" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>SUV</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2011</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all cabrio">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/astonmartin.jpg">
+                                                <img src="~/assets/img/vehicles/astonmartin.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.astonmartin.com/welcome">Aston Martin</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $260/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star80" name="rate" value="5" />
+                                                <label for="star80" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star79" name="rate" value="4" />
+                                                <label for="star79" title="Great!">4 stars</label>
+                                                <input type="radio" id="star78" name="rate" value="3" />
+                                                <label for="star78" title="Decent">3 stars</label>
+                                                <input type="radio" id="star77" name="rate" value="2" />
+                                                <label for="star77" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star76" name="rate" value="1" />
+                                                <label for="star76" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>CABRIO</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2017</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all vintage">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/fordvintage.jpg">
+                                                <img src="~/assets/img/vehicles/fordvintage.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.ford.com/cars/mustang/">Ford Mustang</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $100/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star85" name="rate" value="5" />
+                                                <label for="star85" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star84" name="rate" value="4" />
+                                                <label for="star84" title="Great!">4 stars</label>
+                                                <input type="radio" id="star83" name="rate" value="3" />
+                                                <label for="star83" title="Decent">3 stars</label>
+                                                <input type="radio" id="star82" name="rate" value="2" />
+                                                <label for="star82" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star81" name="rate" value="1" />
+                                                <label for="star81" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>VINTAGE</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">1967</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Air Condition</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all sedan">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/cadillac.jpg">
+                                                <img src="~/assets/img/vehicles/cadillac.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.cadillac.com/sedans/ct6">Cadillac CT6</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $135/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star90" name="rate" value="5" />
+                                                <label for="star90" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star89" name="rate" value="4" />
+                                                <label for="star89" title="Great!">4 stars</label>
+                                                <input type="radio" id="star88" name="rate" value="3" />
+                                                <label for="star88" title="Decent">3 stars</label>
+                                                <input type="radio" id="star87" name="rate" value="2" />
+                                                <label for="star87" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star86" name="rate" value="1" />
+                                                <label for="star86" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>SEDAN</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2019</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate 4 zones</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all van">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/opelvan.jpg">
+                                                <img src="~/assets/img/vehicles/opelvan.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.vauxhall.co.uk/">Vauxhall Vivaro</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $65/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star95" name="rate" value="5" />
+                                                <label for="star95" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star94" name="rate" value="4" />
+                                                <label for="star94" title="Great!">4 stars</label>
+                                                <input type="radio" id="star93" name="rate" value="3" />
+                                                <label for="star93" title="Decent">3 stars</label>
+                                                <input type="radio" id="star92" name="rate" value="2" />
+                                                <label for="star92" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star91" name="rate" value="1" />
+                                                <label for="star91" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>VAN</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2013</a>
+                                                <a href="#">Manual</a>
+                                                <a href="#">Air Condition</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all sedan">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/chevy.jpg">
+                                                <img src="~/assets/img/vehicles/chevy.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.chevrolet.com/cars/malibu">Chevrolet Malibu</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $75/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star100" name="rate" value="5" />
+                                                <label for="star100" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star99" name="rate" value="4" />
+                                                <label for="star99" title="Great!">4 stars</label>
+                                                <input type="radio" id="star98" name="rate" value="3" />
+                                                <label for="star98" title="Decent">3 stars</label>
+                                                <input type="radio" id="star97" name="rate" value="2" />
+                                                <label for="star97" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star96" name="rate" value="1" />
+                                                <label for="star96" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>SEDAN</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2018</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all vintage">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/porschevintage.jpg">
+                                                <img src="~/assets/img/vehicles/porschevintage.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.porsche.com/">Porsche 911</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $75/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star105" name="rate" value="5" />
+                                                <label for="star105" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star104" name="rate" value="4" />
+                                                <label for="star104" title="Great!">4 stars</label>
+                                                <input type="radio" id="star103" name="rate" value="3" />
+                                                <label for="star103" title="Decent">3 stars</label>
+                                                <input type="radio" id="star102" name="rate" value="2" />
+                                                <label for="star102" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star101" name="rate" value="1" />
+                                                <label for="star101" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>VINTAGE</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">1969</a>
+                                                <a href="#">Manual</a>
+                                                <a href="#">Air Condition</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all cabrio">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/jaguarcabrio.jpg">
+                                                <img src="~/assets/img/vehicles/jaguarcabrio.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.jaguar.com/index.html">Jaguar XJ</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $220/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star110" name="rate" value="5" />
+                                                <label for="star110" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star109" name="rate" value="4" />
+                                                <label for="star109" title="Great!">4 stars</label>
+                                                <input type="radio" id="star108" name="rate" value="3" />
+                                                <label for="star108" title="Decent">3 stars</label>
+                                                <input type="radio" id="star107" name="rate" value="2" />
+                                                <label for="star107" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star106" name="rate" value="1" />
+                                                <label for="star106" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>CABRIO</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2019</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all van">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/mercedesvan.jpg">
+                                                <img src="~/assets/img/vehicles/mercedesvan.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.mercedes-benz.com/en/">Mercedes Hartmann</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $70/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star115" name="rate" value="5" />
+                                                <label for="star115" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star114" name="rate" value="4" />
+                                                <label for="star114" title="Great!">4 stars</label>
+                                                <input type="radio" id="star113" name="rate" value="3" />
+                                                <label for="star113" title="Decent">3 stars</label>
+                                                <input type="radio" id="star112" name="rate" value="2" />
+                                                <label for="star112" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star111" name="rate" value="1" />
+                                                <label for="star111" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>VAN</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2014</a>
+                                                <a href="#">Manual</a>
+                                                <a href="#">Air Condtion</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all suv">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/mazda.jpg">
+                                                <img src="~/assets/img/vehicles/mazda.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.mazda.com/">Mazda CX5</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $150/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star120" name="rate" value="5" />
+                                                <label for="star120" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star119" name="rate" value="4" />
+                                                <label for="star119" title="Great!">4 stars</label>
+                                                <input type="radio" id="star118" name="rate" value="3" />
+                                                <label for="star118" title="Decent">3 stars</label>
+                                                <input type="radio" id="star117" name="rate" value="2" />
+                                                <label for="star117" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star116" name="rate" value="1" />
+                                                <label for="star116" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>SUV</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2019</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate 4 zones</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all limo">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/hondalimo.jpg">
+                                                <img src="~/assets/img/vehicles/hondalimo.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://automobiles.honda.com/">Honda Sport Limo</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $999/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star125" name="rate" value="5" />
+                                                <label for="star125" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star124" name="rate" value="4" />
+                                                <label for="star124" title="Great!">4 stars</label>
+                                                <input type="radio" id="star123" name="rate" value="3" />
+                                                <label for="star123" title="Decent">3 stars</label>
+                                                <input type="radio" id="star122" name="rate" value="2" />
+                                                <label for="star122" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star121" name="rate" value="1" />
+                                                <label for="star121" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>LIMOUSINE</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2016</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all vintage">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/trabant.jpg">
+                                                <img src="~/assets/img/vehicles/trabant.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="http://www.trabant-nt.de/367/en/home.aspx">Trabant 601</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $49/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star130" name="rate" value="5" />
+                                                <label for="star130" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star129" name="rate" value="4" />
+                                                <label for="star129" title="Great!">4 stars</label>
+                                                <input type="radio" id="star128" name="rate" value="3" />
+                                                <label for="star128" title="Decent">3 stars</label>
+                                                <input type="radio" id="star127" name="rate" value="2" />
+                                                <label for="star127" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star126" name="rate" value="1" />
+                                                <label for="star126" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>VINTAGE</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">1964</a>
+                                                <a href="#">Manual</a>
+                                                <a href="#">Air Condition</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all van">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/fordvan.jpg">
+                                                <img src="~/assets/img/vehicles/fordvan.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.ford.com/trucks/transit-passenger-van-wagon/?gnav=header-all-vehicles">Ford Transit</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $80/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star135" name="rate" value="5" />
+                                                <label for="star135" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star134" name="rate" value="4" />
+                                                <label for="star134" title="Great!">4 stars</label>
+                                                <input type="radio" id="star133" name="rate" value="3" />
+                                                <label for="star133" title="Decent">3 stars</label>
+                                                <input type="radio" id="star132" name="rate" value="2" />
+                                                <label for="star132" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star131" name="rate" value="1" />
+                                                <label for="star131" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>VAN</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2018</a>
+                                                <a href="#">Manual</a>
+                                                <a href="#">Climate</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all suv">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/jeep.jpg">
+                                                <img src="~/assets/img/vehicles/jeep.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.jeep.com/">Jeep Grand Cherokee</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $155/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star140" name="rate" value="5" />
+                                                <label for="star140" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star139" name="rate" value="4" />
+                                                <label for="star139" title="Great!">4 stars</label>
+                                                <input type="radio" id="star138" name="rate" value="3" />
+                                                <label for="star138" title="Decent">3 stars</label>
+                                                <input type="radio" id="star137" name="rate" value="2" />
+                                                <label for="star137" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star136" name="rate" value="1" />
+                                                <label for="star136" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>SUV</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2018</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate 4 zones</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all van">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/peugeotvan.jpg">
+                                                <img src="~/assets/img/vehicles/peugeotvan.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="http://www.peugeot.com/en">Peugeot Expert</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $45/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star145" name="rate" value="5" />
+                                                <label for="star145" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star144" name="rate" value="4" />
+                                                <label for="star144" title="Great!">4 stars</label>
+                                                <input type="radio" id="star143" name="rate" value="3" />
+                                                <label for="star143" title="Decent">3 stars</label>
+                                                <input type="radio" id="star142" name="rate" value="2" />
+                                                <label for="star142" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star141" name="rate" value="1" />
+                                                <label for="star141" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>VAN</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2012</a>
+                                                <a href="#">Manual</a>
+                                                <a href="#">Air Condition</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all van">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/kiavan.jpg">
+                                                <img src="~/assets/img/vehicles/kiavan.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.kia.com/worldwide/main.do">KIA Sedona </a>
+                                                <span class="price"><i class="fa fa-tag"></i> $69/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star150" name="rate" value="5" />
+                                                <label for="star150" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star149" name="rate" value="4" />
+                                                <label for="star149" title="Great!">4 stars</label>
+                                                <input type="radio" id="star148" name="rate" value="3" />
+                                                <label for="star148" title="Decent">3 stars</label>
+                                                <input type="radio" id="star147" name="rate" value="2" />
+                                                <label for="star147" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star146" name="rate" value="1" />
+                                                <label for="star146" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>VAN</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2015</a>
+                                                <a href="#">Manual</a>
+                                                <a href="#">Climate</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all suv">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/porsche.jpg">
+                                                <img src="~/assets/img/vehicles/porsche.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.porsche.com/usa/models/cayenne/cayenne-models/">Porsche Cayenne</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $250/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star160" name="rate" value="5" />
+                                                <label for="star160" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star159" name="rate" value="4" />
+                                                <label for="star159" title="Great!">4 stars</label>
+                                                <input type="radio" id="star158" name="rate" value="3" />
+                                                <label for="star158" title="Decent">3 stars</label>
+                                                <input type="radio" id="star157" name="rate" value="2" />
+                                                <label for="star157" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star156" name="rate" value="1" />
+                                                <label for="star156" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>SUV</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2018</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all van">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/renaultvan.jpg">
+                                                <img src="~/assets/img/vehicles/renaultvan.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.renault.co.uk/cars/trafic-spaceclass-j82-ph1-bis.html">Renault Trafic</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $45/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star165" name="rate" value="5" />
+                                                <label for="star165" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star164" name="rate" value="4" />
+                                                <label for="star164" title="Great!">4 stars</label>
+                                                <input type="radio" id="star163" name="rate" value="3" />
+                                                <label for="star163" title="Decent">3 stars</label>
+                                                <input type="radio" id="star162" name="rate" value="2" />
+                                                <label for="star162" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star161" name="rate" value="1" />
+                                                <label for="star161" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>VAN</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2012</a>
+                                                <a href="#">Manual</a>
+                                                <a href="#">Air condition</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all sedan">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/vw.jpg">
+                                                <img src="~/assets/img/vehicles/vw.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.vw.com/models/arteon/">Volkswagen Arteon</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $125/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star170" name="rate" value="5" />
+                                                <label for="star170" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star169" name="rate" value="4" />
+                                                <label for="star169" title="Great!">4 stars</label>
+                                                <input type="radio" id="star168" name="rate" value="3" />
+                                                <label for="star168" title="Decent">3 stars</label>
+                                                <input type="radio" id="star167" name="rate" value="2" />
+                                                <label for="star167" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star166" name="rate" value="1" />
+                                                <label for="star166" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>SEDAN</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2018</a>
+                                                <a href="#">Manual</a>
+                                                <a href="#">Climate 4 zones</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all sedan">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/jaguar.jpg">
+                                                <img src="~/assets/img/vehicles/jaguar.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://buildyour.jaguar.com/jag2/r/bodystyle/_/en_xi/xf_k20/47vjp">Jaguar XF</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $75/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star175" name="rate" value="5" />
+                                                <label for="star175" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star174" name="rate" value="4" />
+                                                <label for="star174" title="Great!">4 stars</label>
+                                                <input type="radio" id="star173" name="rate" value="3" />
+                                                <label for="star173" title="Decent">3 stars</label>
+                                                <input type="radio" id="star172" name="rate" value="2" />
+                                                <label for="star172" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star171" name="rate" value="1" />
+                                                <label for="star171" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>SEDAN</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2012</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all sedan">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/lexusIS200t.jpg">
+                                                <img src="~/assets/img/vehicles/lexusIS200t.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.lexus.com/">Lexus IS 200t</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $100/day</span>
+                                            </h3>
+
+                                            <div class="rate">
+
+                                                <input type="radio" id="star180" name="rate" value="5" />
+                                                <label for="star180" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star179" name="rate" value="4" />
+                                                <label for="star179" title="Great!">4 stars</label>
+                                                <input type="radio" id="star178" name="rate" value="3" />
+                                                <label for="star178" title="Decent">3 stars</label>
+                                                <input type="radio" id="star177" name="rate" value="2" />
+                                                <label for="star177" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star176" name="rate" value="1" />
+                                                <label for="star176" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>SEDAN</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2016</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate 4 zones</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->
+                                <!-- Single Popular Car Start -->
+                                <div class="col-lg-4 col-md-6 all sedan">
+                                    <div class="single-popular-car">
+                                        <div class="p-car-thumbnails">
+                                            <a class="car-hover" href="~/assets/img/vehicles/panamera.jpg">
+                                                <img src="~/assets/img/vehicles/panamera.jpg" alt="JSOFT">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-car-content">
+                                            <h3>
+                                                <a class="titleclick" href="https://www.porsche.com/usa/models/panamera/panamera-models/">Porsche Panamera</a>
+                                                <span class="price"><i class="fa fa-tag"></i> $299/day</span>
+                                            </h3>
+                                            <div class="rate">
+
+                                                <input type="radio" id="star185" name="rate" value="5" />
+                                                <label for="star185" title="Awesome!!!">5 stars</label>
+                                                <input type="radio" id="star184" name="rate" value="4" />
+                                                <label for="star184" title="Great!">4 stars</label>
+                                                <input type="radio" id="star183" name="rate" value="3" />
+                                                <label for="star183" title="Decent">3 stars</label>
+                                                <input type="radio" id="star182" name="rate" value="2" />
+                                                <label for="star182" title="Meh...">2 stars</label>
+                                                <input type="radio" id="star181" name="rate" value="1" />
+                                                <label for="star181" title="Bad...">1 star</label>
+
+                                            </div>
+
+                                            <h5>SEDAN</h5>
+
+                                            <div class="p-car-feature">
+                                                <a href="#">2019</a>
+                                                <a href="#">Automatic</a>
+                                                <a href="#">Climate 4 zones</a>
+                                            </div>
+                                            <a href="#" class="rent-btn ">Book It</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Popular Car End -->

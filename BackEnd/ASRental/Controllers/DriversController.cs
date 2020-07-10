@@ -8,9 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using ASRental.Data;
 using ASRental.Models;
 using ASRental.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASRental.Controllers
 {
+     [Authorize(Roles = "Administrator, User")]
     public class DriversController : Controller
     {
         private readonly IDriverService _driverService;
@@ -20,7 +22,7 @@ namespace ASRental.Controllers
             _driverService = driverService;
         }
 
-
+         [Authorize]
         public IActionResult Drivers()
         {
             return View();

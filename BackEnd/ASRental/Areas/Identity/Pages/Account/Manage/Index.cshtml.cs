@@ -28,8 +28,9 @@ namespace ASRental.Areas.Identity.Pages.Account.Manage
             _signInManager = signInManager;
             _environment = environment;
         }
-
+        public string UserId { get; set; }
         public string Username { get; set; }
+        public string PhoneNumber { get; set; }
         public string ProfilePicture { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -37,45 +38,14 @@ namespace ASRental.Areas.Identity.Pages.Account.Manage
 
         [TempData]
         public string StatusMessage { get; set; }
-
-        [BindProperty]
-        public InputModel Input { get; set; }
-
-        public class InputModel
-        {
-            [Phone]
-            [Display(Name = "Phone number")]
-            public string PhoneNumber { get; set; }
-
-            [DisplayName]
-            [Display(Name = "First Name")]
-            public string FirstName { get; set; }
-
-            [DisplayName]
-            [Display(Name = "Last Name")]
-            public string LastName { get; set; }
-
-            [Display(Name = "Profile Picture")]
-            public string ProfilePicture { get; set; }
-        }
-
+      
         private async Task LoadAsync(ApplicationUser user)
         {
-            var username = await _userManager.GetUserNameAsync(user);
-            var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
-
-            Username = username;
-            ProfilePicture = user.ProfilePicture;
-            FirstName = user.FirstName;
+            Username = user.UserName;
+            PhoneNumber = user.PhoneNumber;
             LastName = user.LastName;
-
-            Input = new InputModel
-            {
-                PhoneNumber = phoneNumber,
-                ProfilePicture = user.ProfilePicture,
-                FirstName = user.FirstName,
-                LastName = user.LastName
-            };
+            FirstName = user.FirstName;
+            ProfilePicture = user.ProfilePicture;
         }
 
         public async Task<IActionResult> OnGetAsync()
@@ -93,30 +63,18 @@ namespace ASRental.Areas.Identity.Pages.Account.Manage
         public async Task<IActionResult> OnPostAsync()
         {
             var user = await _userManager.GetUserAsync(User);
+
             if (user == null)
             {
                 return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
             }
+            user.PhoneNumber = HttpContext.Request.Form["PhoneNumber"];
+            user.FirstName = HttpContext.Request.Form["FirstName"];
+            user.LastName = HttpContext.Request.Form["LastName"];
 
-            if (!ModelState.IsValid)
-            {
-                await LoadAsync(user);
-                return Page();
-            }
 
-            var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
-            if (Input.PhoneNumber != phoneNumber)
-            {
-                var setPhoneResult = await _userManager.SetPhoneNumberAsync(user, Input.PhoneNumber);
-                if (!setPhoneResult.Succeeded)
-                {
-                    var userId = await _userManager.GetUserIdAsync(user);
-                    //StatusMessage = "Unexpected error when trying to set phone number.";
-                    //return RedirectToPage();
-                    throw new InvalidOperationException($"Unexpected error occurred setting phone number for user with ID '{userId}'.");
-                }
-            }
 
+            //for update profile img start
             var newFileName = string.Empty;
             if (HttpContext.Request.Form.Files != null)
             {
@@ -144,10 +102,8 @@ namespace ASRental.Areas.Identity.Pages.Account.Manage
             }
 
             await _userManager.UpdateAsync(user);
-
-            await _signInManager.RefreshSignInAsync(user);
             StatusMessage = "Your profile has been updated";
             return RedirectToPage();
         }
     }
-}
+    }

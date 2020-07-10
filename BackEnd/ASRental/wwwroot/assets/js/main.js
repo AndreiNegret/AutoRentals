@@ -7,6 +7,7 @@
          All Window Scroll Function Start
         --------------------------------- */
         $(window).scroll(function () {
+
             // Header Fix Js Here
             if ($(window).scrollTop() >= 200) {
                 $('#header-area').addClass('fixTotop');
@@ -25,24 +26,29 @@
          All Window Scroll Function End
         --------------------------------- */
 
-        // Home Page 0ne Date Picker JS
-        var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+        // Bootstrap datepicker
+        var today = new Date();
+
         $('.start-date').datepicker({
             uiLibrary: 'bootstrap4',
             iconsLibrary: 'fontawesome',
             minDate: today,
             maxDate: function () {
                 return $('.end-date').val();
-            }
-        });
+            },
+            show: fixCalendar
+        }).on('change', fixCalendarValue);
 
         $('.end-date').datepicker({
             uiLibrary: 'bootstrap4',
             iconsLibrary: 'fontawesome',
             minDate: function () {
-                return $('.start-date').val();
-            }
-        });
+                var start_date_plus_1_day = new Date($('.start-date').val());
+                start_date_plus_1_day.setDate(start_date_plus_1_day.getDate() + 1);
+                return start_date_plus_1_day;
+            },
+            show: fixCalendar
+        }).on('change', fixCalendarValue);
 
         // Partner Carousel
         $(".partner-content-wrap").owlCarousel({
@@ -240,3 +246,16 @@
 
 
 }(jQuery));
+
+function fixCalendar(evt) {
+    var $currentTarget = $(evt.currentTarget);
+    var $input = $('#' + $currentTarget.attr('id'));
+    var $inputOffset = $input.offset();
+    $('.gj-calendar').offset({ left: $inputOffset.left, top: $inputOffset.top + $input.height() + 20 });
+};
+
+function fixCalendarValue(evt) {
+    var $currentTarget = $(evt.currentTarget);
+    var $input = $('#' + $currentTarget.attr('id'));
+    $input.val($currentTarget.val());
+};

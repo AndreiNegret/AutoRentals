@@ -8,9 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using ASRental.Data;
 using ASRental.Models;
 using ASRental.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASRental.Controllers
 {
+    [Authorize(Roles = "Administrator, User")]
     public class OffersController : Controller
     {
         private readonly IOfferService _offerService;
@@ -20,7 +22,7 @@ namespace ASRental.Controllers
             _offerService = offerService;
         }
 
-
+         [Authorize]
         public IActionResult Offers()
         {
             return View();

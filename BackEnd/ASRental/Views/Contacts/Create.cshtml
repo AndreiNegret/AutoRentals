@@ -5,23 +5,41 @@
 }
 
 
-        <!--== Page Title Area Start ==-->
-        <section  id="page-title-area" class="section-padding overlay">
-            <div class="container">
-                <div class="row">
-                    <!-- Page Title Start -->
-                    <div class="col-lg-12">
-                        <div class="section-title  text-center">
-                            <h2>Contact Us</h2>
-                            <span class="title-line"><i class="fa fa-car"></i></span>
-                            <p>We are happy to help you anytime!</p>
-                        </div>
-                    </div>
-                    <!-- Page Title End -->
+<!--== Page Title Area Start ==-->
+<section id="page-title-area" class="section-padding overlay">
+    <div class="container">
+        <div class="row">
+            <!-- Page Title Start -->
+            <div class="col-lg-12">
+                <div class="section-title  text-center">
+                    <h2>Contact Us</h2>
+                    <span class="title-line"><i class="fa fa-car"></i></span>
+                    <p>We are happy to help you anytime!</p>
                 </div>
             </div>
-        </section>
-        <!--== Page Title Area End ==-->
+            <!-- Page Title End -->
+        </div>
+    </div>
+</section>
+<!--== Page Title Area End ==-->
+
+@* Admin specific privileges start *@
+
+
+@if (User.Identity.IsAuthenticated)
+{
+    if (User.IsInRole("Administrator"))
+    {
+
+        <div class="m-5">
+            <a class="btn btn-primary" asp-area="" asp-controller="Contacts" asp-action="Index"> View all messages</a>
+        </div>
+    }
+}
+        
+@* Admin specific privileges end *@
+
+
         <!--== Contact Page Area Start ==-->
         <div class="contact-page-wrao section-padding">
             <div class="container">
@@ -80,13 +98,13 @@
 
                                 <div class="message-input">
                                     <div class="form-group">
-                                        <label asp-for="Message"   class="control-label"></label>
+                                        <label asp-for="Message" class="control-label"></label>
                                         <input asp-for="Message" required="" class="form-control txtbox" />
                                         <span asp-validation-for="Message" class="text-danger"></span>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" value="Submit" class="btn btn-primary" />
+                                    <input type="submit" onclick="showAlert()" value="Submit" class="btn btn-primary" />
                                 </div>
                             </form>
                         </div>
@@ -97,21 +115,21 @@
         <!--== Contact Page Area End ==-->
         @*<h1>Create</h1>
 
-        <h4>Contact</h4>
-        <hr />
-        <div class="row">
-            <div class="col-md-4">
-            </div>
-        </div>*@
+            <h4>Contact</h4>
+            <hr />
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+            </div>*@
 
         @*<div>
-            <a asp-action="Index">Back to List</a>
-        </div>*@
+                <a asp-action="Index">Back to List</a>
+            </div>*@
 
         @section Scripts {
             <script>
                 function showAlert() {
-                    alert("Hello world!");
+                    alert("Your Message is sent succesfully!");
                 }
             </script>
             @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
@@ -127,16 +145,16 @@
         <!--== Map Area End ==-->
         @* Confimation message send *@
         @*@section scripts{
-            <script>
-        $(document).ready(function(){
-          $(".close").click(function(){
-            $("#myAlert").alert("close");
-          });
-          $("#myAlert").on('closed.bs.alert', function(){
-            alert('The alert message is now closed.');
-          });
-        });
-            </script>
+                <script>
+            $(document).ready(function(){
+              $(".close").click(function(){
+                $("#myAlert").alert("close");
+              });
+              $("#myAlert").on('closed.bs.alert', function(){
+                alert('The alert message is now closed.');
+              });
+            });
+                </script>
 
-        }*@
+            }*@
 

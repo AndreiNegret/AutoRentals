@@ -16,47 +16,47 @@
                             <p>FOR AS LOW AS $40 A DAY PLUS 15% DISCOUNT <br> FOR OUR RETURNING CUSTOMERS</p>
 
                             <div class="book-ur-car">
-                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                                    <input type="hidden" asp-for="BookCarId" />
-                                    <form asp-controller="BookCars" asp-action="Create" method="post">
-                                <div class="pick-location bookinput-item">
-                                    <select asp-for="Location" type="text" name="Name" placeholder="Location" required="" class="custom-select">
-                                        <option selected>Pick Location</option>
-                                        <option value="1">San Francisco</option>
-                                        <option value="2">Los Angeles</option>
-                                        <option value="3">San Diego</option>
-                                        <option value="4">San Jose</option>
-                                        <option value="5">Fresno</option>
-                                        <option value="6">Sacramento</option>
-                                    </select>
-                                    <span asp-validation-for="Location" class="text-danger"></span>
-                                </div>
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <input type="hidden" asp-for="BookCarId" />
+                                <form method="post" onsubmit="processForm(event)" class="d-flex">
+                                    <div class="pick-location bookinput-item">
+                                        <select asp-for="Location" name="location" placeholder="Location" required class="custom-select">
+                                            <option selected>Pick Location</option>
+                                            <option value="San Francisco">San Francisco</option>
+                                            <option value="Los Angeles">Los Angeles</option>
+                                            <option value="San Diego">San Diego</option>
+                                            <option value="San Jose">San Jose</option>
+                                            <option value="Fresno">Fresno</option>
+                                            <option value="Sacramento">Sacramento</option>
+                                        </select>
+                                        <span asp-validation-for="Location" class="text-danger"></span>
+                                    </div>
 
-                                        <div class="pick-date bookinput-item">
-                                            <input asp-for="PickDate" type="text" id="start-date" placeholder="Pick Date" class="start-date">
-                                        </div>
+                                    <div class="pick-date bookinput-item">
+                                        <input asp-for="PickDate" type="text" id="startDate" name="pickDate" placeholder="Pick Date" class="start-date" required />
+                                    </div>
 
-                                        <div class="retern-date bookinput-item">
-                                            <input asp-for="ReturnDate" type="text" id="end-date" placeholder="Return Date" class="end-date" />
-                                        </div>
+                                    <div class="return-date bookinput-item">
+                                        <input asp-for="ReturnDate" type="text" id="endDate" placeholder="Return Date" name="returnDate" class="end-date" required />
+                                    </div>
 
-                                        <div class="car-choose bookinput-item">
-                                            <select asp-for="CarName" type="text" name="Name" placeholder="Car Name" required="" class="custom-select">
-                                                <option selected>Car Name</option>
-                                                <option value="1">Cadillac</option>
-                                                <option value="2">Audi</option>
-                                                <option value="3">BMW</option>
-                                                <option value="4">Mercedes-Benz</option>
-                                                <option value="5">Porsche</option>
-                                                <option value="6">Jeep</option>
-                                            </select>
-                                            <span asp-validation-for="CarName" class="text-danger"></span>
-                                        </div>
+                                    <div class="car-choose bookinput-item">
+                                        <select asp-for="CarName" type="text" name="carName" placeholder="Car Name" required class="custom-select">
+                                            <option selected>Car Name</option>
+                                            <option value="Cadillac">Cadillac</option>
+                                            <option value="Audi">Audi</option>
+                                            <option value="BMW">BMW</option>
+                                            <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                            <option value="Porsche">Porsche</option>
+                                            <option value="Jeep">Jeep</option>
+                                        </select>
+                                        <span asp-validation-for="CarName" class="text-danger"></span>
+                                    </div>
 
-                                        <div class="bookcar-btn bookinput-item">
-                                            <input type="submit" value="Book Car" class="btn btn-primary" />
-                                        </div>
-                                    </form>
+                                    <div class="bookcar-btn bookinput-item">
+                                        <input type="submit" value="Book Car" class="btn btn-primary" />
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -397,10 +397,10 @@
                     <p class="font-weight-bold  mt-4 mb-4">We consider budget of each person so you can choose what suits you best!</p>
                     <p class="mb-4 ">Checkout the latest offers we have in store for you!</p>
 
-                    <a href="offer.cshtml" class="btn btn-primary simple_btn_hover text-center ">
-                        Go To Pricing
-                    </a>
-                </div>
+                    <a asp-area="" asp-controller="Offers" asp-action="Create" class="nav-link btn btn-primary mt-4 w-25 aligncenter d-flex simple_btn_hover  "> 
+                        <span class="aligncenter"> Go To Pricing </span>
+                        </a>    
+                    </div>
             </div>
             <!-- Section Title End -->
         </div>
@@ -665,3 +665,25 @@
         </div>
     </div>
 </div>
+
+<script>function processForm(evt) {
+        const form = evt.target;
+        // find form data values
+        var values = {};
+        $.each($(form).serializeArray(), function (i, field) {
+            if (field.name == 'pickDate' || field.name == 'returnDate') {
+                values[field.name] = new Date(field.value).toISOString();
+            } else {
+                values[field.name] = field.value;
+            }
+        });
+        $.ajax({
+            url: 'BookCars/Create',
+            method: 'POST',
+            data: values,
+            success: function () {
+                window.location = '/BookCars';
+            }
+        })
+        evt.preventDefault();
+    }</script>

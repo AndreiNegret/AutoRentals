@@ -8,9 +8,12 @@ using Microsoft.EntityFrameworkCore;
 using ASRental.Data;
 using ASRental.Models;
 using ASRental.Services.Interfaces;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASRental.Controllers
 {
+    [Authorize(Roles = "Administrator, User")]
     public class ServicesController : Controller
     {
         private readonly IServiceService _serviceService;
@@ -20,7 +23,7 @@ namespace ASRental.Controllers
             _serviceService = serviceService;
         }
 
-
+         [Authorize]
         public IActionResult Services()
         {
             return View();
@@ -65,9 +68,10 @@ namespace ASRental.Controllers
             if (ModelState.IsValid)
             {
                 await _serviceService.CreateService(service);
-                return RedirectToAction(nameof(Create));
+                return RedirectToAction(nameof(Index));
             }
             return View(service);
+            
         }
 
         // GET: Services/Edit/5
