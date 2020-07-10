@@ -8,9 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using ASRental.Data;
 using ASRental.Models;
 using ASRental.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASRental.Controllers
 {
+    [Authorize(Roles = "Administrator, User")]
     public class CarsController : Controller
     {
         private readonly ICarService _carService;
@@ -20,6 +22,7 @@ namespace ASRental.Controllers
             _carService = carService;
         }
 
+        [Authorize]
         // GET: Cars
         public async Task<IActionResult> Gallery()
         {

@@ -40,7 +40,7 @@
 
 <body class="loader-active">
 
-    
+
 
     <!--== Preloader Area Start ==-->
     <div class="preloader">
@@ -84,8 +84,11 @@
                 <div class="row">
                     <!--== Logo Start ==-->
                     <div class="col-lg-2">
-                        <h1><a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                                <img src="~/assets/img/logo.png" alt="JSOFT"></a></h1>
+                        <h1>
+                            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                                <img src="~/assets/img/logo.png" alt="JSOFT">
+                            </a>
+                        </h1>
                     </div>
                     <!--== Logo End ==-->
                     <!--== Main Menu Start ==-->
@@ -108,7 +111,7 @@
                                             <a class="nav-link" asp-area="" asp-controller="Cars" asp-action="Gallery">Gallery</a>
                                             <a class="nav-link" asp-area="" asp-controller="Offers" asp-action="Create">Pricing</a>
                                             <a class="nav-link" asp-area="" asp-controller="Drivers" asp-action="Create">Drivers</a>
-                                            <a class="nav-link" asp-area="" asp-controller="Cars" asp-action="Details">Car Details</a>
+                                            <a class="nav-link" asp-area="" asp-controller="Cars" asp-action="Create">Car Details</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -249,24 +252,14 @@
         </section>
     </footer>
     <!--== Footer Area End ==-->
-
-
-    @RenderSection("Scripts", required: false)
-
-
-
-
-
-
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-
     <!--== Scroll Top Area Start ==-->
     <div class="scroll-top">
         <img src="~/assets/img/scroll-top.png" alt="JSOFT">
     </div>
     <!--== Scroll Top Area End ==-->
+
+    @RenderSection("Scripts", required: false)
+
     <!--=======================Javascript============================-->
     <!--=== Jquery Min Js ===-->
     <script src="~/assets/js/jquery-3.2.1.min.js"></script>
@@ -297,8 +290,7 @@
 
     <!--=== Main JS ===-->
     <script src="~/assets/js/main.js"></script>
-
-
+    <script src="~/js/site.js" asp-append-version="true"></script>
 </body>
 </html>
 
