@@ -4,63 +4,72 @@
     ViewData["Title"] = "Index";
 }
 
-<!--== Page Title Area Start ==-->
-<section id="page-title-area" class="section-padding overlay">
-    <div class="container">
-        <div class="row">
-            <!-- Page Title Start -->
-            <div class="col-lg-12">
-                <div class="section-title  text-center">
-                    <h2>Congratulations!</h2>
-                    <span class="title-line"><i class="fa fa-car"></i></span>
-                    <p>Your package has been ordered!</p>
+    <!--== Page Title Area Start ==-->
+    <section id="page-title-area" class="section-padding overlay">
+        <div class="container">
+            <div class="row">
+                <!-- Page Title Start -->
+                <div class="col-lg-12">
+                    <div class="section-title  text-center">
+                        <h2>Congratulations!</h2>
+                        <span class="title-line"><i class="fa fa-car"></i></span>
+                        <p>Your package has been ordered!</p>
+                    </div>
                 </div>
+                <!-- Page Title End -->
             </div>
-            <!-- Page Title End -->
         </div>
-    </div>
-</section>
-<!--== Page Title Area End ==-->
+    </section>
+    <!--== Page Title Area End ==-->
 
-<h1 class="center-text my-3">Index</h1>
+<div class="m-5">
+    <h1 class="center-text my-3">Index</h1>
 
-<p>
-    <a class="center-text my-3" asp-action="Create">Order New Package</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.OfferType)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+    <p>
+        <a class="center-text my-3" asp-action="Create">Order New Package</a>
+    </p>
+    <table class="table">
+        <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.OfferType)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Price)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Description)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.OfferId">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.OfferId">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.OfferId">Delete</a>
-                </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.OfferType)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th></th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OfferType)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            if (User.IsInRole("Administrator"))
+                            {
+                                <a class=" btn btn-primary" asp-action="Edit" asp-route-id="@item.OfferId">Edit</a>
+                                <a class="ml-3 btn btn-primary" asp-action="Details" asp-route-id="@item.OfferId"> Details </a>
+                                <a class="ml-3 btn btn-primary" asp-action="Delete" asp-route-id="@item.OfferId"> Delete </a>
+                            }
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

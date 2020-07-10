@@ -476,6 +476,11 @@ a.slicknav_btn {
 	margin-bottom: 30px;
 	padding: 65px 25px;
 }
+.service-item:hover {
+	border: 1px solid #0195eb;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
 
 .service-item h3 {
 	color: #000;
@@ -503,7 +508,7 @@ a.slicknav_btn {
 
 .single-service {
 	margin-bottom: 50px;
-	line-height: 2;
+	/*line-height: 2;*/
 }
 
 .service-icon {
@@ -524,77 +529,8 @@ a.slicknav_btn {
 	transition: 0.4s;
 }
 
-.service-icon:after {
-	border-left: 1px solid #0195eb;
-	content: "";
-	height: 0%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	-webkit-transition: 0.4s;
-	transition: 0.4s;
-}
 
-.service-icon:before {
-	border-bottom: 1px solid #0195eb;
-	content: "";
-	height: 0%;
-	right: 0;
-	position: absolute;
-	bottom: 0;
-	width: 0%;
-	-webkit-transition: 0.4s;
-	transition: 0.4s;
-}
 
-.service-icon span {
-	display: block;
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	-webkit-transition: 0.4s;
-	transition: 0.4s;
-	width: 100%;
-}
-
-.service-icon span::after {
-	border-top: 1px solid #0195eb;
-	content: "";
-	left: 0;
-	position: absolute;
-	top: 0;
-	-webkit-transition: 0.4s;
-	transition: 0.4s;
-	width: 0%;
-}
-
-.service-icon span::before {
-	border-right: 1px solid #0195eb;
-	content: "";
-	height: 0%;
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	-webkit-transition: 0.4s;
-	transition: 0.4s;
-}
-
-.single-service:hover .service-icon:after {
-	height: 100%;
-}
-
-.single-service:hover .service-icon:before {
-	width: 100%;
-}
-
-.single-service:hover .service-icon span::after {
-	width: 100%;
-}
-
-.single-service:hover .service-icon span::before {
-	height: 100%;
-}
 
 .single-service h4 {
 	font-size: 20px;
@@ -3279,6 +3215,7 @@ body,
 
 .simple_btn_hover {
 	color: white!important;
+	text-align:center!important;
 	
 }
 

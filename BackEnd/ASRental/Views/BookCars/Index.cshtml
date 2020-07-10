@@ -60,9 +60,15 @@
                     @Html.DisplayFor(modelItem => item.CarName)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.BookCarId">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.BookCarId">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.BookCarId">Delete</a>
+                      @if (User.Identity.IsAuthenticated)
+                {
+                    if (User.IsInRole("Administrator"))
+                    {
+                        <a class=" btn btn-primary" asp-action="Edit" asp-route-id="@item.BookCarId">Edit</a> 
+                        <a class="ml-3 btn btn-primary" asp-action="Details" asp-route-id="@item.BookCarId"> Details </a>
+                        <a class="ml-3 btn btn-primary" asp-action="Delete" asp-route-id="@item.BookCarId"> Delete </a>
+                    }
+                }
                 </td>
             </tr>
         }

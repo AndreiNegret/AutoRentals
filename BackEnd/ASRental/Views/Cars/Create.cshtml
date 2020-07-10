@@ -13,7 +13,7 @@
                 <div class="section-title  text-center">
                     <h2>Our Cars</h2>
                     <span class="title-line"><i class="fa fa-car"></i></span>
-                    <p>Learn more about our vehicles!</p>
+                    <p>Your car is being added!</p>
                 </div>
             </div>
             <!-- Page Title End -->
@@ -21,154 +21,72 @@
     </div>
 </section>
 <!--== Page Title Area End ==-->
-<!--== Car List Area Start ==-->
-<section id="car-list-area" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <!-- Car List Content Start -->
-            <div class="col-lg-8">
-                <div class="car-details-content">
-                    <h2>Aston Martin One-77 <span class="price">Rent: <b>$150</b></span></h2>
-                    <div class="car-preview-crousel">
-                        <div class="single-car-preview">
-                            <img src="~/assets/img/cadinfo.jpg" alt="JSOFT" />
-                        </div>
-                        <div class="single-car-preview">
-                            <img src="~/assets/img/cadiback.jpg" alt="JSOFT" />
-                        </div>
-                        <div class="single-car-preview">
-                            <img src="~/assets/img/cadinterior.jpg" />
-                        </div>
-                    </div>
-                    <div class="car-details-info">
-                        <h4>Additional Info</h4>
-                        <p>The Cadillac Escalade is a full-size luxury SUV engineered and manufactured by General Motors. It was Cadillac's first major entry into the SUV market. As of 2015, the Cadillac Escalade is available in every country that Cadillac is available in.[citation needed] The Escalade ESV version is available in the United States, Canada, Mexico, Russia and the Middle East. It is Cadillac's largest luxury oriented, passenger- and load-carrying vehicle, which was a niche previously filled by the Cadillac Commercial Chassis.</p>
 
-                        <div class="technical-info">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="tech-info-table">
-                                        <table class="table table-bordered">
-                                            <tr>
-                                                <th>Class</th>
-                                                <td>SUV</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Fuel</th>
-                                                <td>Petrol</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Doors</th>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <th>GearBox</th>
-                                                <td>Automatic</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
 
-                                <div class="col-lg-6">
-                                    <div class="tech-info-list">
-                                        <ul>
-                                            <li>ABS</li>
-                                            <li>Air Bags</li>
-                                            <li>Bluetooth</li>
-                                            <li>Car Kit</li>
-                                            <li>GPS</li>
-                                            <li>Music</li>
-                                            <li>Heated wheel</li>
-                                            <li>Ventilated & Heated Seats</li>
-                                            <li>7 Seats</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+<section class="m-5">
 
-                        <!-- Single Sidebar Start -->
-                        <div class="single-sidebar">
-                            <h3>Connect with Us</h3>
 
-                            <div class="sidebar-body">
-                                <div class="social-icons text-center">
-                                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" target="_blank"><i class="fa fa-behance"></i></a>
-                                    <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                    <a href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Sidebar End -->
-                    </div>
+    <h1>Create</h1>
+
+    <h4>Car</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="CarNumber" class="control-label"></label>
+                    <input asp-for="CarNumber" class="form-control" />
+                    <span asp-validation-for="CarNumber" class="text-danger"></span>
                 </div>
-                <!-- Sidebar Area End -->
-            </div>
+                <div class="form-group">
+                    <label asp-for="CarName" class="control-label"></label>
+                    <input asp-for="CarName" class="form-control" />
+                    <span asp-validation-for="CarName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CarBody" class="control-label"></label>
+                    <input asp-for="CarBody" class="form-control" />
+                    <span asp-validation-for="CarBody" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Price" class="control-label"></label>
+                    <input asp-for="Price" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CarPicture" class="control-label"></label>
+                    <input type="file" asp-for="CarPicture" class="form-control" />
+                    <span asp-validation-for="CarPicture" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FabricationYear" class="control-label"></label>
+                    <input asp-for="FabricationYear" class="form-control" />
+                    <span asp-validation-for="FabricationYear" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="TransmissionType" class="control-label"></label>
+                    <input asp-for="TransmissionType" class="form-control" />
+                    <span asp-validation-for="TransmissionType" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ClimateControl" class="control-label"></label>
+                    <input asp-for="ClimateControl" class="form-control" />
+                    <span asp-validation-for="ClimateControl" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
         </div>
     </div>
-</section>
 
-<h1 class="center-text my-3">Book</h1>
-
-<h4 class="center-text my-3">Your Car</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="CarNumber" class="control-label"></label>
-                <input asp-for="CarNumber" class="form-control" />
-                <span asp-validation-for="CarNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CarName" class="control-label"></label>
-                <input asp-for="CarName" class="form-control" />
-                <span asp-validation-for="CarName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CarBody" class="control-label"></label>
-                <input asp-for="CarBody" class="form-control" />
-                <span asp-validation-for="CarBody" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
-                <span asp-validation-for="Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CarPicture" class="control-label"></label>
-                <input asp-for="CarPicture" class="form-control" />
-                <span asp-validation-for="CarPicture" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FabricationYear" class="control-label"></label>
-                <input asp-for="FabricationYear" class="form-control" />
-                <span asp-validation-for="FabricationYear" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TransmissionType" class="control-label"></label>
-                <input asp-for="TransmissionType" class="form-control" />
-                <span asp-validation-for="TransmissionType" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ClimateControl" class="control-label"></label>
-                <input asp-for="ClimateControl" class="form-control" />
-                <span asp-validation-for="ClimateControl" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+    <div>
+        <a asp-action="Index">Back to List</a>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
+</section>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+
